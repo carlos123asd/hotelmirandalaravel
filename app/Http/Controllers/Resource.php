@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Activity;
 
 class Resource extends Controller
 {
@@ -11,7 +12,8 @@ class Resource extends Controller
      */
     public function index()
     {
-        echo "Hola funciona";
+        $activities = Activity::all();
+        return response()->json($activities);
     }
 
     /**
@@ -27,7 +29,9 @@ class Resource extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validateRequest($request);
+        $newactivity = Activity::create($request->all());
+        return response()->json($newactivity,201);
     }
 
     /**
@@ -35,7 +39,8 @@ class Resource extends Controller
      */
     public function show(string $id)
     {
-        //
+        $activity = Activity::findOrFail($id);
+        return response()->json($activity);
     }
 
     /**
@@ -51,7 +56,10 @@ class Resource extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $this->validateRequest($request);
+        $activity = Activity::findOrFail($id);
+        $activity->update($request->all());
+        return response()->json($activity);
     }
 
     /**
@@ -59,6 +67,19 @@ class Resource extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $activity = Activity::findOrFail($id);
+        $activity->delete();
+        return response()->json(null,204);
+    }
+
+    private function validateRequest(Request $request){
+        $request->validate([
+            'type' => 'required|string',
+            'user_id' => 'required|integer',
+            'datetime' => 'required|date',
+            'paid' => 'required|boolean',
+            'notes' => 'required|string',
+            'satisfaction' => 'nullable|integer'
+        ]);
     }
 }
