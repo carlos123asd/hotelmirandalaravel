@@ -29,8 +29,7 @@ class Activities extends Controller
      */
     public function store(Request $request)
     {
-        $request['user_id'] = 2;
-        //$request['paid'] = false;
+        $request['user_id'] = 2; //Lo metemos a pulso para hacer la prueba, despues lo obtenemos del contexto de la autentificacion
         //dd($request->all());
         $this->validateRequest($request);
         $newactivity = Activity::create($request->all());
@@ -51,7 +50,8 @@ class Activities extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $activity = Activity::findOrFail($id);
+        return view('editactivitie',compact('activity'));
     }
 
     /**
