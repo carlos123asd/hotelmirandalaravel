@@ -1,11 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Resource;
+use App\Http\Controllers\Activities;
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
-
-
-Route::resource('resource', Resource::class);
+//Listar todas las actividades
+Route::resource('activities', Activities::class);

@@ -24,7 +24,7 @@ class ActivityFactory extends Factory
             'paid' => $this->faker->boolean(),
             'notes' => $this->faker->paragraph(),
             'satisfaction' => $this->faker->optional()->randomElement([0,1,2,3,4,5,6,7,8,9,10])
-/*
+            /*
             $table->enum('type',['surf', 'windsurf', 'kayak', 'atv', 'hot air balloon']);
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');

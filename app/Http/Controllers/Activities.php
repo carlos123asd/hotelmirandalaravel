@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Activity;
 
-class Resource extends Controller
+class Activities extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,7 @@ class Resource extends Controller
     public function index()
     {
         $activities = Activity::all();
-        return response()->json($activities);
+        return view('activities',compact('activities'));
     }
 
     /**
@@ -21,7 +21,7 @@ class Resource extends Controller
      */
     public function create()
     {
-        //
+        return view('newactivitie');
     }
 
     /**
@@ -29,6 +29,7 @@ class Resource extends Controller
      */
     public function store(Request $request)
     {
+        dd($request->all());
         $this->validateRequest($request);
         $newactivity = Activity::create($request->all());
         return response()->json($newactivity,201);
@@ -75,9 +76,9 @@ class Resource extends Controller
     private function validateRequest(Request $request){
         $request->validate([
             'type' => 'required|string',
-            'user_id' => 'required|integer',
+            //'user_id' => 'required|integer',
             'datetime' => 'required|date',
-            'paid' => 'required|boolean',
+            //'paid' => 'boolean',
             'notes' => 'required|string',
             'satisfaction' => 'nullable|integer'
         ]);
