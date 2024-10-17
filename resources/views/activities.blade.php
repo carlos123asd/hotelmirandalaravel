@@ -10,7 +10,7 @@
 <body class="bg-gray-100 p-8">
     <div class="max-w-4xl mx-auto">
         <div class="bg-white shadow-md rounded-lg overflow-hidden">
-            @if(is_array($activities))
+            @if ($activities[0] != null)
                 <h1 class="text-4xl font-bold text-gray-800 mb-6">Activities List</h1>
                 @foreach($activities as $activitie)
                     <div class="p-6 border-b border-gray-200">
