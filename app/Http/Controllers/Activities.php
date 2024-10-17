@@ -29,7 +29,9 @@ class Activities extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        $request['user_id'] = 2;
+        //$request['paid'] = false;
+        //dd($request->all());
         $this->validateRequest($request);
         $newactivity = Activity::create($request->all());
         return response()->json($newactivity,201);
