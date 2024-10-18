@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Activity;
+use Illuminate\Support\Facades\Auth;
 
 class Activities extends Controller
 {
@@ -12,8 +13,8 @@ class Activities extends Controller
      */
     public function index()
     {
-        $activities = Activity::all();
-        return view('activities',compact('activities'));
+        $activities = Auth::user()->activities;
+        return view('activities.show',compact('activities'));
     }
 
     /**
@@ -21,7 +22,7 @@ class Activities extends Controller
      */
     public function create()
     {
-        return view('newactivitie');
+        return view('activities.create');
     }
 
     /**
@@ -29,8 +30,7 @@ class Activities extends Controller
      */
     public function store(Request $request)
     {
-        $request['user_id'] = 2; //Lo metemos a pulso para hacer la prueba, despues lo obtenemos del contexto de la autentificacion
-        //dd($request->all());
+        $request['user_id'] = Auth::user()->id; 
         $this->validateRequest($request);
         $newactivity = Activity::create($request->all());
         return response()->json($newactivity,201);
@@ -41,8 +41,10 @@ class Activities extends Controller
      */
     public function show(string $id)
     {
-        $activities = Activity::findOrFail($id);
-        return view('activities',compact('activities'));
+        $activities = Activity::where('id',$id)
+                    ->where('user_id',Auth::user()->id)
+                    ->first();
+        return view('activities.show',compact('activities'));
     }
 
     /**
@@ -50,8 +52,10 @@ class Activities extends Controller
      */
     public function edit(string $id)
     {
-        $activity = Activity::findOrFail($id);
-        return view('editactivitie',compact('activity'));
+        $activity = Activity::where('id',$id)
+                    ->where('user_id',Auth::user()->id)
+                    ->first();
+        return view('activities.edit',compact('activity'));
     }
 
     /**

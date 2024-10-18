@@ -10,6 +10,7 @@
 <body class="bg-gray-100 p-8">
     <div class="max-w-4xl mx-auto">
         <div class="bg-white shadow-md rounded-lg overflow-hidden">
+        @if(!empty($activities))
             @if ($activities[0] != null)
                 <h1 class="text-4xl font-bold text-gray-800 mb-6">Activities List</h1>
                 @foreach($activities as $activitie)
@@ -51,6 +52,9 @@
                     </div>
                 </div>
             @endif
+        @else
+            <h1 class="text-4xl font-bold text-gray-800 mb-6">Dont have Activities</h1>
+        @endif
         </div>
     </div>
 
