@@ -9,7 +9,7 @@ class Photo extends Model
 {
     use HasFactory;
 
-    private $fillable = [
+    protected $fillable = [
         'room_id',
         'uri'
     ];

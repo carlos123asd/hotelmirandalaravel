@@ -14,11 +14,10 @@ return new class extends Migration
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
             $table->string('guest');
-            $table->dateTime('orderdate');
+            $table->dateTime('orderdate')->useCurrent();
             $table->dateTime('checkin');
             $table->dateTime('checkout');
-            $table->dateTime('ordertime')->useCurrent();
-            $table->text('specialrequest')->nullable();
+            $table->text('specialrequest')->nullable(true);
             $table->unsignedBigInteger('room_id');
             $table->foreign('room_id')->references('id')->on('rooms');
             $table->enum('status',['In Progress','Check Out', 'Check In']);

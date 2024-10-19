@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->integer('room_number')->unique();
             $table->enum('type_room',['Double Superior', 'Suite', 'Single Bed', 'Double Bed']);
-            $table->text('description')->nullable();
+            $table->text('description')->nullable(true);
             $table->boolean('offer')->default(false);
             $table->decimal('price',8,2);
             $table->unsignedTinyInteger('discount')->default(0);
-            $table->text('cancellation')->nullable();
+            $table->text('cancellation')->nullable(true);
             $table->enum('status',['Available', 'Booked'])->default('Available');
             $table->timestamps();
         });
