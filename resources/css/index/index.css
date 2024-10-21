@@ -1,0 +1,60 @@
+@import url('../nav/nav.css');
+@import url('../header/headerHome.css');
+@import url('../form/availability.css');
+@import url('../aboutUs/about.css');
+@import url('../aboutUs/imgAboutUs.css');
+@import url('../sliderRooms/slider.css');
+@import url('../introvideo/video.css');
+@import url('../facilities/facilities.css');
+@import url('../menu/menu.css');
+@import url('../sliderStandar/sliderStandarNavigation.css');
+@import url('../estadisticas/estadisticas.css');
+@import url('../footer/footer.css');
+@import url('../aboutPage/about.css');
+@import url('../room/room.css');
+@import url('../roomdetails/roomdetails.css');
+@import url('../offers/offers.css');
+@import url('../contact/contact.css');
+
+@font-face {
+  font-family: 'Archivo-Regular';
+  src: url('../../sources/fonts/archivo/Archivo-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'OldStandardTT-Regular';
+  src: url('../../sources/fonts/old_TT/OldStandardTT-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../../sources/fonts/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'oswald';
+  src: url('../../sources/fonts/Oswald/Oswald-Regular.ttf');
+}
+
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+
+.topbarescritorio{
+  display: none;
+}
+@media only screen and (min-width:1000px){
+  .topbarescritorio{
+    display: block;
+    width: 100%;
+    height: 6.25em;
+    background: #222222;
+  }
+}
