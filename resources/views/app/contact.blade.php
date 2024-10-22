@@ -18,7 +18,7 @@
     <section class="contact">
         <div class="contact__contentcontact">
             <div class="contact__contentcontact__imgphone">
-                <img src="../../sources//imgs/contact/phone.svg" alt="">
+                <img src="{{ asset('build/images/imgs/contact/phone.svg') }}" alt="">
             </div>
             <span class="contact__contentcontact__num">01</span>
             <div class="contact__contentcontact__txtphone">
@@ -29,7 +29,7 @@
         </div>
         <div class="contact__contentcontact">
             <div class="contact__contentcontact__imgphone">
-                <img src="../../sources//imgs/contact/correo.svg" alt="">
+                <img src="{{ asset('build/images/imgs/contact/correo.svg') }}" alt="">
             </div>
             <span class="contact__contentcontact__num">02</span>
             <div class="contact__contentcontact__txtphone">
@@ -39,7 +39,7 @@
         </div>
         <div class="contact__contentcontact">
             <div class="contact__contentcontact__imgphone">
-                <img src="../../sources//imgs/contact/map.svg" alt="">
+                <img src="{{ asset('build/images/imgs/contact/map.svg') }}" alt="">
             </div>
             <span class="contact__contentcontact__num">03</span>
             <div class="contact__contentcontact__txtphone">
@@ -52,27 +52,27 @@
     <!--Form-->
     <section class="form">
         <div class="formImgAux">
-            <img class="form__headerimg" src="../../sources/imgs/form/contact.jpg" alt="Contact Us">
+            <img class="form__headerimg" src="{{ asset('build/images/imgs/form/contact.jpg') }}" alt="Contact Us">
         </div>
         <div class="form__inputs">
             <div class="form__inputs__contentname">
-                <img class="form__inputs__contentname__img" src="../../sources/imgs/form/name.svg" alt="Your Name">
+                <img class="form__inputs__contentname__img" src="{{ asset('build/images/imgs/form/name.svg') }}" alt="Your Name">
                 <input class="form__inputs__contentname__input" type="text" placeholder="Your full name">
             </div>
             <div class="form__inputs__contentname">
-                <img class="form__inputs__contentname__img" src="../../sources/imgs/form/form2.svg" alt="Your Name">
+                <img class="form__inputs__contentname__img" src="{{ asset('build/images/imgs/form/form2.svg') }}" alt="Your Name">
                 <input class="form__inputs__contentname__input" type="text" placeholder="Add phone number">
             </div>
             <div class="form__inputs__contentname">
-                <img class="form__inputs__contentname__img" src="../../sources/imgs/form/form3.svg" alt="Your Name">
+                <img class="form__inputs__contentname__img" src="{{ asset('build/images/imgs/form/form3.svg') }}" alt="Your Name">
                 <input class="form__inputs__contentname__input" type="text" placeholder="Enter email address">
             </div>
             <div class="form__inputs__contentname">
-                <img class="form__inputs__contentname__img" src="../../sources/imgs/form/form4.svg" alt="Your Name">
+                <img class="form__inputs__contentname__img" src="{{ asset('build/images/imgs/form/form4.svg') }}" alt="Your Name">
                 <input class="form__inputs__contentname__input" type="text" placeholder="Enter subject">
             </div>
             <div class="form__inputs__contentname">
-                <img class="form__inputs__contentname__img form__inputs__contentname__img--red" src="../../sources/imgs/form/form5.svg" alt="Your Name">
+                <img class="form__inputs__contentname__img form__inputs__contentname__img--red" src="{{ asset('build/images/imgs/form/form5.svg') }}" alt="Your Name">
                 <textarea class="form__inputs__contentname__inputarea" placeholder="Enter message"></textarea>
             </div>
         </div>

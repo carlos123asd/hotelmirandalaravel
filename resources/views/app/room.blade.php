@@ -20,7 +20,7 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="../../sources/imgs/room1.jpg" alt="">
+            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                 <div class="contentAuxRoom">
                     <div class="slider__content__topbar">
                         <div class="slider__content__topbar__img"></div>
@@ -40,7 +40,7 @@
                 </div>
           </div>
           <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="../../sources/imgs/room1.jpg" alt="">
+            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                 <div class="contentAuxRoom">
                     <div class="slider__content__topbar">
                         <div class="slider__content__topbar__img"></div>
@@ -60,7 +60,7 @@
                 </div>
           </div>
           <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="../../sources/imgs/room1.jpg" alt="">
+            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                 <div class="contentAuxRoom">
                     <div class="slider__content__topbar">
                         <div class="slider__content__topbar__img"></div>
@@ -80,7 +80,7 @@
                 </div>
           </div>
           <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="../../sources/imgs/room1.jpg" alt="">
+            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                 <div class="contentAuxRoom">
                     <div class="slider__content__topbar">
                         <div class="slider__content__topbar__img"></div>
@@ -100,7 +100,7 @@
                 </div>
           </div>
           <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="../../sources/imgs/room1.jpg" alt="">
+            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                 <div class="contentAuxRoom">
                     <div class="slider__content__topbar">
                         <div class="slider__content__topbar__img"></div>
@@ -120,7 +120,7 @@
                 </div>
           </div>
           <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="../../sources/imgs/room1.jpg" alt="">
+            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                 <div class="contentAuxRoom">
                     <div class="slider__content__topbar">
                         <div class="slider__content__topbar__img"></div>
@@ -140,7 +140,7 @@
                 </div>
           </div>
           <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="../../sources/imgs/room1.jpg" alt="">
+            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                 <div class="contentAuxRoom">
                     <div class="slider__content__topbar">
                         <div class="slider__content__topbar__img"></div>
@@ -160,7 +160,7 @@
                 </div>
           </div>
           <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="../../sources/imgs/room1.jpg" alt="">
+            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                 <div class="contentAuxRoom">
                     <div class="slider__content__topbar">
                         <div class="slider__content__topbar__img"></div>
@@ -180,7 +180,7 @@
                 </div>
           </div>
           <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="../../sources/imgs/room1.jpg" alt="">
+            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                 <div class="contentAuxRoom">
                     <div class="slider__content__topbar">
                         <div class="slider__content__topbar__img"></div>
@@ -200,7 +200,7 @@
                 </div>
           </div>
           <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="../../sources/imgs/room1.jpg" alt="">
+            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                 <div class="contentAuxRoom">
                     <div class="slider__content__topbar">
                         <div class="slider__content__topbar__img"></div>
@@ -220,7 +220,7 @@
                 </div>
           </div>
           <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="../../sources/imgs/room1.jpg" alt="">
+            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                 <div class="contentAuxRoom">
                     <div class="slider__content__topbar">
                         <div class="slider__content__topbar__img"></div>
@@ -240,7 +240,7 @@
                 </div>
           </div>
           <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="../../sources/imgs/room1.jpg" alt="">
+            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                 <div class="contentAuxRoom">
                     <div class="slider__content__topbar">
                         <div class="slider__content__topbar__img"></div>

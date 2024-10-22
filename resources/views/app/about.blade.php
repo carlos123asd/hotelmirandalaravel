@@ -57,7 +57,7 @@
     <!--Tour-->
     <section class="taketour">
         <div>
-            <img class="taketour__img" src="../../sources/imgs/restaurant.jpg" alt="Foto del restaurante">
+            <img class="taketour__img" src="{{ asset('build/images/imgs/restaurant.jpg') }}" alt="Foto del restaurante">
         </div>
         <div>
             <h3 class="taketour__sub">Restaurant</h3>
@@ -204,12 +204,12 @@
         <h2 class="counter__tit">Some Fun Facts</h2>
         <div class="counter__contentmain">
             <div class="counter__content">
-                <img src="../../sources/imgs/counter/likeman.svg" alt="" class="counter__content__img"/>
+                <img src="{{ asset('build/images/imgs/counter/likeman.svg') }}" alt="" class="counter__content__img"/>
                 <div class="counter__content__txt">
                     <span class="counter__content__txt__num">8000</span>
                     <span class="counter__content__txt__text">Happy Users</span>
                 </div>
-                <img src="../../sources/imgs/counter/flecha.svg" alt="go" class="counter__content__flecha"/>
+                <img src="{{ asset('build/images/imgs/counter/flecha.svg') }}" alt="go" class="counter__content__flecha"/>
             </div>
 
             <div class="counter__content">
@@ -218,7 +218,7 @@
                     <span class="counter__content__txt__num">10M</span>
                     <span class="counter__content__txt__text">Reviews & Appriciate</span>
                 </div>
-                <img src="../../sources/imgs/counter/flecha.svg" alt="go" class="counter__content__flecha"/>
+                <img src="{{ asset('build/images/imgs/counter/flecha.svg') }}" alt="go" class="counter__content__flecha"/>
             </div>
 
             <div class="counter__content">
@@ -227,7 +227,7 @@
                     <span class="counter__content__txt__num">100</span>
                     <span class="counter__content__txt__text">Country Coverage</span>
                 </div>
-                <img src="../../sources/imgs/counter/flecha.svg" alt="go" class="counter__content__flecha"/>
+                <img src="{{ asset('build/images/imgs/counter/flecha.svg') }}" alt="go" class="counter__content__flecha"/>
             </div>
         </div>
 
@@ -235,10 +235,10 @@
         <div class="swiperNormal">
             <div class="swiper-dim swiper-wrapper">
                 <div class="swiper-slide">
-                    <img class="imgSlider" src="../../sources/imgs/counter/slide2.jpg" alt="Room 1"/>
+                    <img class="imgSlider" src="{{ asset('build/images/imgs/counter/slide2.jpg') }}" alt="Room 1"/>
                 </div>
                 <div class="swiper-slide">
-                    <img class="imgSlider" src="../../sources/imgs/counter/slide1.jpg" alt="Room 2"/>
+                    <img class="imgSlider" src="{{ asset('build/images/imgs/counter/slide1.jpg') }}" alt="Room 2"/>
                 </div>
             </div>
             <div class="swiper-pagination paginationStandar"></div>
@@ -246,10 +246,10 @@
         <div class="swiperNormall">
             <div class="normalaux">
                 <div class="swiperNormall__imgcontent">
-                    <img class="swiperNormall__imgcontent__img" src="../../sources/imgs/room1.jpg" alt="Room 2"/>
+                    <img class="swiperNormall__imgcontent__img" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="Room 2"/>
                 </div>
                 <div class="swiperNormall__imgcontent">
-                    <img class="swiperNormall__imgcontent__img" src="../../sources/imgs/room3.jpg" alt="Room 3"/>
+                    <img class="swiperNormall__imgcontent__img" src="{{ asset('build/images/imgs/room3.jpg') }}" alt="Room 3"/>
                 </div>
             </div>
         </div>

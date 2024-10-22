@@ -34,20 +34,20 @@
                         <div class="listnone">
                             <div class="offers__lista1">
                                 <ul>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista1.svg" alt="">Air conditioner</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista2.svg" alt="">Breakfast</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista3.svg" alt="">Cleaning</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista4.svg" alt="">Grocery</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista5.svg" alt="">Shop near</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista1.svg') }}" alt="">Air conditioner</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista2.svg') }}" alt="">Breakfast</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista3.svg') }}" alt="">Cleaning</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista4.svg') }}" alt="">Grocery</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista5.svg') }}" alt="">Shop near</li>
                                 </ul>
                             </div>
                             <div class="offers__lista2">
                                 <ul>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista8.svg" alt="">High speed WiFi</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista9.svg" alt="">Kitchen</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista10.svg" alt="">Shower</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista11.svg" alt="">Single bed</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista12.svg" alt="">Towels</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista8.svg') }}" alt="">High speed WiFi</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista9.svg') }}" alt="">Kitchen</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista10.svg') }}" alt="">Shower</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista11.svg') }}" alt="">Single bed</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista12.svg') }}" alt="">Towels</li>
                                 </ul>
                             </div>
                         </div>
@@ -57,20 +57,20 @@
                     <div class="listblock">
                         <div class="offers__lista1 listblock__listan1">
                             <ul>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista1.svg" alt="">Air conditioner</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista2.svg" alt="">Breakfast</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista3.svg" alt="">Cleaning</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista4.svg" alt="">Grocery</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista5.svg" alt="">Shop near</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista1.svg') }}" alt="">Air conditioner</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista2.svg') }}" alt="">Breakfast</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista3.svg') }}" alt="">Cleaning</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista4.svg') }}" alt="">Grocery</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista5.svg') }}" alt="">Shop near</li>
                             </ul>
                         </div>
                         <div class="offers__lista2 listblock__listan2">
                             <ul>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista8.svg" alt="">High speed WiFi</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista9.svg" alt="">Kitchen</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista10.svg" alt="">Shower</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista11.svg" alt="">Single bed</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista12.svg" alt="">Towels</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista8.svg') }}" alt="">High speed WiFi</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista9.svg') }}" alt="">Kitchen</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista10.svg') }}" alt="">Shower</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista11.svg') }}" alt="">Single bed</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista12.svg') }}" alt="">Towels</li>
                             </ul>
                         </div>
                     </div>
@@ -95,20 +95,20 @@
                         <div class="listnone">
                             <div class="offers__lista1">
                                 <ul>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista1.svg" alt="">Air conditioner</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista2.svg" alt="">Breakfast</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista3.svg" alt="">Cleaning</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista4.svg" alt="">Grocery</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista5.svg" alt="">Shop near</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista1.svg') }}" alt="">Air conditioner</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista2.svg') }}" alt="">Breakfast</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista3.svg') }}" alt="">Cleaning</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista4.svg') }}" alt="">Grocery</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista5.svg') }}" alt="">Shop near</li>
                                 </ul>
                             </div>
                             <div class="offers__lista2">
                                 <ul>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista8.svg" alt="">High speed WiFi</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista9.svg" alt="">Kitchen</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista10.svg" alt="">Shower</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista11.svg" alt="">Single bed</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista12.svg" alt="">Towels</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista8.svg') }}" alt="">High speed WiFi</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista9.svg') }}" alt="">Kitchen</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista10.svg') }}" alt="">Shower</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista11.svg') }}" alt="">Single bed</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista12.svg') }}" alt="">Towels</li>
                                 </ul>
                             </div>
                         </div>
@@ -118,20 +118,20 @@
                     <div class="listblock">
                         <div class="offers__lista1 listblock__listan1">
                             <ul>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista1.svg" alt="">Air conditioner</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista2.svg" alt="">Breakfast</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista3.svg" alt="">Cleaning</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista4.svg" alt="">Grocery</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista5.svg" alt="">Shop near</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista1.svg') }}" alt="">Air conditioner</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista2.svg') }}" alt="">Breakfast</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista3.svg') }}" alt="">Cleaning</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista4.svg') }}" alt="">Grocery</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista5.svg') }}" alt="">Shop near</li>
                             </ul>
                         </div>
                         <div class="offers__lista2 listblock__listan2">
                             <ul>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista8.svg" alt="">High speed WiFi</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista9.svg" alt="">Kitchen</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista10.svg" alt="">Shower</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista11.svg" alt="">Single bed</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista12.svg" alt="">Towels</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista8.svg') }}" alt="">High speed WiFi</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista9.svg') }}" alt="">Kitchen</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista10.svg') }}" alt="">Shower</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista11.svg') }}" alt="">Single bed</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista12.svg') }}" alt="">Towels</li>
                             </ul>
                         </div>
                     </div>
@@ -156,20 +156,20 @@
                         <div class="listnone">
                             <div class="offers__lista1">
                                 <ul>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista1.svg" alt="">Air conditioner</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista2.svg" alt="">Breakfast</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista3.svg" alt="">Cleaning</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista4.svg" alt="">Grocery</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista5.svg" alt="">Shop near</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista1.svg') }}" alt="">Air conditioner</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista2.svg') }}" alt="">Breakfast</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista3.svg') }}" alt="">Cleaning</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista4.svg') }}" alt="">Grocery</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista5.svg') }}" alt="">Shop near</li>
                                 </ul>
                             </div>
                             <div class="offers__lista2">
                                 <ul>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista8.svg" alt="">High speed WiFi</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista9.svg" alt="">Kitchen</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista10.svg" alt="">Shower</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista11.svg" alt="">Single bed</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista12.svg" alt="">Towels</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista8.svg') }}" alt="">High speed WiFi</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista9.svg') }}" alt="">Kitchen</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista10.svg') }}" alt="">Shower</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista11.svg') }}" alt="">Single bed</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista12.svg') }}" alt="">Towels</li>
                                 </ul>
                             </div>
                         </div>
@@ -179,20 +179,20 @@
                     <div class="listblock">
                         <div class="offers__lista1 listblock__listan1">
                             <ul>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista1.svg" alt="">Air conditioner</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista2.svg" alt="">Breakfast</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista3.svg" alt="">Cleaning</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista4.svg" alt="">Grocery</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista5.svg" alt="">Shop near</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista1.svg') }}" alt="">Air conditioner</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista2.svg') }}" alt="">Breakfast</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista3.svg') }}" alt="">Cleaning</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista4.svg') }}" alt="">Grocery</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista5.svg') }}" alt="">Shop near</li>
                             </ul>
                         </div>
                         <div class="offers__lista2 listblock__listan2">
                             <ul>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista8.svg" alt="">High speed WiFi</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista9.svg" alt="">Kitchen</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista10.svg" alt="">Shower</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista11.svg" alt="">Single bed</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista12.svg" alt="">Towels</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista8.svg') }}" alt="">High speed WiFi</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista9.svg') }}" alt="">Kitchen</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista10.svg') }}" alt="">Shower</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista11.svg') }}" alt="">Single bed</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista12.svg') }}" alt="">Towels</li>
                             </ul>
                         </div>
                     </div>
@@ -217,20 +217,20 @@
                         <div class="listnone">
                             <div class="offers__lista1">
                                 <ul>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista1.svg" alt="">Air conditioner</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista2.svg" alt="">Breakfast</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista3.svg" alt="">Cleaning</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista4.svg" alt="">Grocery</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista5.svg" alt="">Shop near</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista1.svg') }}" alt="">Air conditioner</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista2.svg') }}" alt="">Breakfast</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista3.svg') }}" alt="">Cleaning</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista4.svg') }}" alt="">Grocery</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista5.svg') }}" alt="">Shop near</li>
                                 </ul>
                             </div>
                             <div class="offers__lista2">
                                 <ul>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista8.svg" alt="">High speed WiFi</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista9.svg" alt="">Kitchen</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista10.svg" alt="">Shower</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista11.svg" alt="">Single bed</li>
-                                    <li><img src="../../sources/imgs/listaroomdetails/lista12.svg" alt="">Towels</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista8.svg') }}" alt="">High speed WiFi</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista9.svg') }}" alt="">Kitchen</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista10.svg') }}" alt="">Shower</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista11.svg') }}" alt="">Single bed</li>
+                                    <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista12.svg') }}" alt="">Towels</li>
                                 </ul>
                             </div>
                         </div>
@@ -240,20 +240,20 @@
                     <div class="listblock">
                         <div class="offers__lista1 listblock__listan1">
                             <ul>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista1.svg" alt="">Air conditioner</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista2.svg" alt="">Breakfast</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista3.svg" alt="">Cleaning</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista4.svg" alt="">Grocery</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista5.svg" alt="">Shop near</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista1.svg') }}" alt="">Air conditioner</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista2.svg') }}" alt="">Breakfast</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista3.svg') }}" alt="">Cleaning</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista4.svg') }}" alt="">Grocery</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista5.svg') }}" alt="">Shop near</li>
                             </ul>
                         </div>
                         <div class="offers__lista2 listblock__listan2">
                             <ul>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista8.svg" alt="">High speed WiFi</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista9.svg" alt="">Kitchen</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista10.svg" alt="">Shower</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista11.svg" alt="">Single bed</li>
-                                <li><img src="../../sources/imgs/listaroomdetails/lista12.svg" alt="">Towels</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista8.svg') }}" alt="">High speed WiFi</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista9.svg') }}" alt="">Kitchen</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista10.svg') }}" alt="">Shower</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista11.svg') }}" alt="">Single bed</li>
+                                <li><img src="{{ asset('build/images/imgs/listaroomdetails/lista12.svg') }}" alt="">Towels</li>
                             </ul>
                         </div>
                     </div>
@@ -272,7 +272,7 @@
                 <div class="swiper-wrapper">
                     <div class="room swiper-slide room--offers">
                         <div class="contentoffersAux">
-                            <img class="room__imgRoom" src="../../sources/imgs/room1.jpg" alt="">
+                            <img class="room__imgRoom" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                             <div class="slider__content__topbar slider__content__topbar--posOffers">
                                 <div class="slider__content__topbar__img"></div>
                                 <div class="slider__content__topbar__img2"></div>
@@ -292,7 +292,7 @@
                     </div>
                     <div class="room swiper-slide room--offers">
                         <div class="contentoffersAux">
-                            <img class="room__imgRoom" src="../../sources/imgs/room1.jpg" alt="">
+                            <img class="room__imgRoom" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                             <div class="slider__content__topbar slider__content__topbar--posOffers">
                                 <div class="slider__content__topbar__img"></div>
                                 <div class="slider__content__topbar__img2"></div>
@@ -312,7 +312,7 @@
                     </div>
                     <div class="room swiper-slide room--offers">
                         <div class="contentoffersAux">
-                            <img class="room__imgRoom" src="../../sources/imgs/room1.jpg" alt="">
+                            <img class="room__imgRoom" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
                             <div class="slider__content__topbar slider__content__topbar--posOffers">
                                 <div class="slider__content__topbar__img"></div>
                                 <div class="slider__content__topbar__img2"></div>
