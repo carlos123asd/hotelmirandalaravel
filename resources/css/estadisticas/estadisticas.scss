@@ -6,6 +6,9 @@
     height: 68.75em;
     &__img{
         margin-bottom: 1em;
+        & img{
+            margin: 0 auto
+        }
     }
     &__tit{
         font-family: 'Roboto';

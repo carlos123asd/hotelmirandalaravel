@@ -1,21 +1,3 @@
-@import url('../nav/nav.css');
-@import url('../header/headerHome.css');
-@import url('../form/availability.css');
-@import url('../aboutUs/about.css');
-@import url('../aboutUs/imgAboutUs.css');
-@import url('../sliderRooms/slider.css');
-@import url('../introvideo/video.css');
-@import url('../facilities/facilities.css');
-@import url('../menu/menu.css');
-@import url('../sliderStandar/sliderStandarNavigation.css');
-@import url('../estadisticas/estadisticas.css');
-@import url('../footer/footer.css');
-@import url('../aboutPage/about.css');
-@import url('../room/room.css');
-@import url('../roomdetails/roomdetails.css');
-@import url('../offers/offers.css');
-@import url('../contact/contact.css');
-
 @font-face {
   font-family: 'Archivo-Regular';
   src: url('../../fonts/archivo/Archivo-Regular.ttf');
