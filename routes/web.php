@@ -10,13 +10,23 @@ use Illuminate\Support\Facades\Route;
 //Home
 Route::get('/', function () {
     return view('index');
-});
+})->name('home');
+//About Us
+Route::get('/about', function () {
+    return view('app.about');
+})->name('about');
+//Contact
+Route::get('/contact', function () {
+    return view('app.contact');
+})->name('contact');
+
 
 //Rutas Activities
 Route::get('activities', [Activities::class,'index'])->name('activities.index');
 Route::resource('activities',Activities::class)->except(['index'])->middleware('auth');
 //Rutas Rooms
 Route::get('rooms', [Rooms::class, 'index'])->name('rooms.index');
+Route::get('rooms/offers', [Rooms::class, 'indexoffers'])->name('rooms.offers');
 Route::resource('rooms',Rooms::class)->except(['index'])->middleware('auth');
 //Rutas Bookings
 Route::get('bookings', [Bookings::class, 'index'])->name('bookings.index');

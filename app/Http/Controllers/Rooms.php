@@ -6,12 +6,16 @@ use Illuminate\Http\Request;
 
 class Rooms extends Controller
 {
+    public function indexoffers()
+    {
+        return view('app.offers');
+    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        //
+        return view('app.room');
     }
 
     /**

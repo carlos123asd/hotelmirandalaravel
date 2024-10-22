@@ -43,19 +43,21 @@
             </div>
             <!--titulo-->
             <div class="navtitulos">
-                <div class="navtitulos__content navtitulos--fondo">
-                    <img class="navtitulos__content__img" src="{{ asset('build/images/imgs/H.svg') }}" alt="Logo Hotel Miranda"/>
-                </div>
-                <div class="navtitulos__content">
-                    <img class="navtitulos__content__tit" src="{{ asset('build/images/imgs/HotelMiranda.svg') }}" alt=""/>
-                </div>
+                <a href="{{ route('home') }}">
+                    <div class="navtitulos__content navtitulos--fondo">
+                        <img class="navtitulos__content__img" src="{{ asset('build/images/imgs/H.svg') }}" alt="Logo Hotel Miranda"/>
+                    </div>
+                    <div class="navtitulos__content">
+                        <img class="navtitulos__content__tit" src="{{ asset('build/images/imgs/HotelMiranda.svg') }}" alt=""/>
+                    </div>
+                </a>
             </div>
             <!--Nav-->
             <div class="navMenu">
-                <div class="navMenu__about"><a href="./app/pages/about.html">About Us</a></div>
-                <div class="navMenu__rooms"><a href="./app/pages/room.html">Rooms</a></div>
-                <div class="navMenu__offers"><a href="./app/pages/offers.html">Offers</a></div>
-                <div class="navMenu__contact"><a href="./app/pages/contact.html">Contact</a></div> 
+                <div class="navMenu__about"><a href="{{ route('about') }}">About Us</a></div>
+                <div class="navMenu__rooms"><a href="{{ route('rooms.index') }}">Rooms</a></div>
+                <div class="navMenu__offers"><a href="{{ route('rooms.offers') }}">Offers</a></div>
+                <div class="navMenu__contact"><a href="{{ route('contact') }}">Contact</a></div> 
             </div>                  
             <!--iconos-->
             <div class="naviconos">

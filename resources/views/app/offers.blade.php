@@ -9,7 +9,7 @@
         <h2 class="aboutheader__tit">Our Offers</h2>
         <div class="aboutheader__btn">
             <span>
-                <a href="../../index.html">Home&nbsp;|&nbsp;</a>Offers
+                <a href="{{ route('home') }}">Home&nbsp;|&nbsp;</a>Offers
             </span>
         </div>
     </section>

@@ -9,7 +9,7 @@
         <h2 class="aboutheader__tit">About Us</h2>
         <div class="aboutheader__btn">
             <span>
-                <a href="../../index.html">Home&nbsp;|&nbsp;</a>About
+                <a href="{{ route('home') }}">Home&nbsp;|&nbsp;</a>About
             </span>
         </div>
     </section>

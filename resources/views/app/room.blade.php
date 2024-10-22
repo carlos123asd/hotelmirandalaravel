@@ -9,7 +9,7 @@
         <h2 class="aboutheader__tit aboutheader__tit--dim">Ultimate Room</h2>
         <div class="aboutheader__btn">
             <span>
-                <a href="../../index.html">Home&nbsp;|&nbsp;</a>Rooms
+                <a href="{{ route('home') }}">Home&nbsp;|&nbsp;</a>Rooms
             </span>
         </div>
     </section>
