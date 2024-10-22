@@ -31,7 +31,7 @@
                 align-content: end;
                 &__span{
                     position: absolute;
-                    @include configImgMixer.imgconfig('../../sources/imgs/calendarform.svg',100%,100%)
+                    @include configImgMixer.imgconfig('../../imgs/calendarform.svg',100%,100%)
                 }
                 &__input{
                     position: absolute;

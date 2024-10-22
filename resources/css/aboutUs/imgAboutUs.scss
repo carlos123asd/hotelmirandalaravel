@@ -19,10 +19,10 @@
             background-color: #222222;
         }
         &__img{
-            @include configImgMixer.imgconfig('../../sources/imgs/team.svg',68px,50px);
+            @include configImgMixer.imgconfig('../../imgs/team.svg',68px,50px);
         }
         &__img2{
-            @include configImgMixer.imgconfig('../../sources/imgs/calendar.svg',57px,50px);
+            @include configImgMixer.imgconfig('../../imgs/calendar.svg',57px,50px);
         }
         &__imgshadow{
             width: 144px;

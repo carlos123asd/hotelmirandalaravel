@@ -3,54 +3,6 @@
 @section('title', 'Home')
 
 @section('content') <!-- Aquí empieza el contenido variable -->
-<div class="topbarescritorio"></div>
-    <nav>
-        <div class="navspan">
-            <span>We Make Your Feel Comfortable</span>
-        </div>
-        <div class="contentsecondnav">
-            <!--close-->
-            <div class="navclose">
-                <div class="navclose__img"></div>
-                <div class="navclose__menu"></div>
-            </div>
-            <!--titulo-->
-            <div class="navtitulos">
-                <div class="navtitulos__content navtitulos--fondo">
-                    <img class="navtitulos__content__img" src="./sources/imgs/H.svg" alt="Logo Hotel Miranda"/>
-                </div>
-                <div class="navtitulos__content">
-                    <img class="navtitulos__content__tit" src="./sources/imgs/HotelMiranda.svg" alt=""/>
-                </div>
-            </div>
-            <!--Nav-->
-            <div class="navMenu">
-                <div class="navMenu__about"><a href="./app/pages/about.html">About Us</a></div>
-                <div class="navMenu__rooms"><a href="./app/pages/room.html">Rooms</a></div>
-                <div class="navMenu__offers"><a href="./app/pages/offers.html">Offers</a></div>
-                <div class="navMenu__contact"><a href="./app/pages/contact.html">Contact</a></div> 
-            </div>                  
-            <!--iconos-->
-            <div class="naviconos">
-                <div class="aux">
-                    <div class="naviconos__perfil"></div>
-                </div>
-                <div class="aux2">
-                    <div class="naviconos__search"></div>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!--Nav JS-->
-    <div class="nav">
-        <ul class="nav__list">
-            <li>About Us</li>
-            <li>Rooms</li>
-            <li>Offers</li>
-            <li>Contact</li>
-        </ul>
-    </div>
-
     <header>
         <h3 class="subtitulo">THE ULTIMATE LUXURY EXPERIENCE</h3>
         <h1 class="titulo">The Perfect<br>Base For You</h1>
@@ -103,11 +55,11 @@
         <div class="contentaboutimgs">
             <div class="aboutImgs">
                 <div class="aboutImgs__content">
-                    <img class="aboutImgs__content__img" src="./sources/imgs/img1.jpg" alt=""/>
+                    <img class="aboutImgs__content__img" src="{{ asset('build/images/imgs/img1.jpg') }}" alt=""/>
                 </div>
                 <div class="aboutImgs__contenttxt">
                     <div class="aboutImgs__contenttxt__img"></div>
-                    <img class="aboutImgs__contenttxt__imgshadow" src="./sources/imgs/shadowTeam.svg" alt="">
+                    <img class="aboutImgs__contenttxt__imgshadow" src="{{ asset('build/images/imgs/shadowTeam.svg') }}" alt="">
                     <div class="aboutImgs__contenttxt__tit">Strong Team</div>
                     <div class="aboutImgs__contenttxt__sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</div>
                 </div>
@@ -115,7 +67,7 @@
         
             <div class="aboutImgs">
                 <div class="aboutImgs__content">
-                    <img class="aboutImgs__content__img" src="./sources/imgs/img2.jpg" alt=""/>
+                    <img class="aboutImgs__content__img" src="{{ asset('build/images/imgs/img2.jpg') }}" alt=""/>
                 </div>
                 <div class="aboutImgs__contenttxt aboutImgs__contenttxt--color">
                     <div class="aboutImgs__contenttxt__img2"></div>
@@ -150,7 +102,7 @@
                             </div>
                         </div>
                         <div class="swiperImage">
-                            <img class="swiperImage__img" src="./sources/imgs/room1.jpg" alt="Room 1"/>
+                            <img class="swiperImage__img" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="Room 1"/>
                         </div>
                         <div class="slider__content__info">
                             <div>
@@ -174,7 +126,7 @@
                             </div>
                         </div>
                         <div class="swiperImage">
-                            <img class="swiperImage__img" src="./sources/imgs/room2.jpg" alt="Room 2"/>
+                            <img class="swiperImage__img" src="{{ asset('build/images/imgs/room2.jpg') }}" alt="Room 2"/>
                         </div>
                         <div class="slider__content__info">
                             <div>
@@ -198,7 +150,7 @@
                             </div>
                         </div>
                         <div class="swiperImage">
-                            <img class="swiperImage__img" src="./sources/imgs/room1.jpg" alt="Room 1"/>
+                            <img class="swiperImage__img" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="Room 1"/>
                         </div>
                         <div class="slider__content__info">
                             <div>
@@ -382,109 +334,109 @@
                 <div class="swiper-slide slide-width">
                     <div class="menuinfo">
                         <div class="menuinfo__contentimg">
-                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu1.jpg" alt="Menu 1"/>
+                            <img class="menuinfo__contentimg__img" src="{{ asset('build/images/imgs/menu1.jpg') }}" alt="Menu 1"/>
                         </div>
                         <div class="menuinfo__contenttxt">
                             <h2 class="menuinfo__contenttxt__tit">Eggs & Bacon</h2>
                             <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                        <img class="menuinfo__contenttxt__img" src="./sources/imgs/menuflecha.svg" alt="more information">
+                        <img class="menuinfo__contenttxt__img" src="{{ asset('build/images/imgs/menuflecha.svg') }}" alt="more information">
                     </div>
                 </div>
                 <div class="swiper-slide slide-width">
                     <div class="menuinfo">
                         <div class="menuinfo__contentimg">
-                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu2.jpg" alt="Menu 2"/>
+                            <img class="menuinfo__contentimg__img" src="{{ asset('build/images/imgs/menu2.jpg') }}" alt="Menu 2"/>
                         </div>
                         <div class="menuinfo__contenttxt">
                             <h2 class="menuinfo__contenttxt__tit">Tea or Coffee</h2>
                             <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                        <img class="menuinfo__contenttxt__img" src="./sources/imgs/menuflecha.svg" alt="more information">
+                        <img class="menuinfo__contenttxt__img" src="{{ asset('build/images/imgs/menuflecha.svg') }}" alt="more information">
                     </div>
                 </div>
                 <div class="swiper-slide slide-width">
                     <div class="menuinfo">
                         <div class="menuinfo__contentimg">
-                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu3.jpg" alt="Menu 3"/>
+                            <img class="menuinfo__contentimg__img" src="{{ asset('build/images/imgs/menu3.jpg') }}" alt="Menu 3"/>
                         </div>
                         <div class="menuinfo__contenttxt">
                             <h2 class="menuinfo__contenttxt__tit">Chia Oatmeal</h2>
                             <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                        <img class="menuinfo__contenttxt__img" src="./sources/imgs/menuflecha.svg" alt="more information">
+                        <img class="menuinfo__contenttxt__img" src="{{ asset('build/images/imgs/menuflecha.svg') }}" alt="more information">
                     </div>
                 </div>
                 <div class="swiper-slide slide-width">
                     <div class="menuinfo">
                         <div class="menuinfo__contentimg">
-                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu4.jpg" alt="Menu 4"/>
+                            <img class="menuinfo__contentimg__img" src="{{ asset('build/images/imgs/menu4.jpg') }}" alt="Menu 4"/>
                         </div>
                         <div class="menuinfo__contenttxt">
                             <h2 class="menuinfo__contenttxt__tit">Fruit Parfait</h2>
                             <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                        <img class="menuinfo__contenttxt__img" src="./sources/imgs/menuflecha.svg" alt="more information">
+                        <img class="menuinfo__contenttxt__img" src="{{ asset('build/images/imgs/menuflecha.svg') }}" alt="more information">
                     </div>
                 </div>
                 <div class="swiper-slide slide-width">
                     <div class="menuinfo">
                         <div class="menuinfo__contentimg">
-                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu5.jpg" alt="Menu 5"/>
+                            <img class="menuinfo__contentimg__img" src="{{ asset('build/images/imgs/menu5.jpg') }}" alt="Menu 5"/>
                         </div>
                         <div class="menuinfo__contenttxt">
                             <h2 class="menuinfo__contenttxt__tit">Marmalade Selection</h2>
                             <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                        <img class="menuinfo__contenttxt__img" src="./sources/imgs/menuflecha.svg" alt="more information">
+                        <img class="menuinfo__contenttxt__img" src="{{ asset('build/images/imgs/menuflecha.svg') }}" alt="more information">
                     </div>
                 </div>
                 <div class="swiper-slide slide-width">
                     <div class="menuinfo">
                         <div class="menuinfo__contentimg">
-                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu6.jpg" alt="Menu 6"/>
+                            <img class="menuinfo__contentimg__img" src="{{ asset('build/images/imgs/menu6.jpg') }}" alt="Menu 6"/>
                         </div>
                         <div class="menuinfo__contenttxt">
                             <h2 class="menuinfo__contenttxt__tit">Cheese Plate</h2>
                             <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                        <img class="menuinfo__contenttxt__img" src="./sources/imgs/menuflecha.svg" alt="more information">
+                        <img class="menuinfo__contenttxt__img" src="{{ asset('build/images/imgs/menuflecha.svg') }}" alt="more information">
                     </div>
                 </div>
                 <div class="swiper-slide slide-width">
                     <div class="menuinfo">
                         <div class="menuinfo__contentimg">
-                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu1.jpg" alt="Menu 1"/>
+                            <img class="menuinfo__contentimg__img" src="{{ asset('build/images/imgs/menu1.jpg') }}" alt="Menu 1"/>
                         </div>
                         <div class="menuinfo__contenttxt">
                             <h2 class="menuinfo__contenttxt__tit">Eggs & Bacon</h2>
                             <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                        <img class="menuinfo__contenttxt__img" src="./sources/imgs/menuflecha.svg" alt="more information">
+                        <img class="menuinfo__contenttxt__img" src="{{ asset('build/images/imgs/menuflecha.svg') }}" alt="more information">
                     </div>
                 </div>
                 <div class="swiper-slide slide-width">
                     <div class="menuinfo">
                         <div class="menuinfo__contentimg">
-                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu2.jpg" alt="Menu 2"/>
+                            <img class="menuinfo__contentimg__img" src="{{ asset('build/images/imgs/menu2.jpg') }}" alt="Menu 2"/>
                         </div>
                         <div class="menuinfo__contenttxt">
                             <h2 class="menuinfo__contenttxt__tit">Tea or Coffee</h2>
                             <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                        <img class="menuinfo__contenttxt__img" src="./sources/imgs/menuflecha.svg" alt="more information">
+                        <img class="menuinfo__contenttxt__img" src="{{ asset('build/images/imgs/menuflecha.svg') }}" alt="more information">
                     </div>
                 </div>
                 <div class="swiper-slide slide-width">
                     <div class="menuinfo">
                         <div class="menuinfo__contentimg">
-                            <img class="menuinfo__contentimg__img" src="./sources/imgs/menu3.jpg" alt="Menu 3"/>
+                            <img class="menuinfo__contentimg__img" src="{{ asset('build/images/imgs/menu3.jpg') }}" alt="Menu 3"/>
                         </div>
                         <div class="menuinfo__contenttxt">
                             <h2 class="menuinfo__contenttxt__tit">Chia Oatmeal</h2>
                             <p class="menuinfo__contenttxt__p">Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                        <img class="menuinfo__contenttxt__img" src="./sources/imgs/menuflecha.svg" alt="more information">
+                        <img class="menuinfo__contenttxt__img" src="{{ asset('build/images/imgs/menuflecha.svg') }}" alt="more information">
                     </div>
                 </div>
             </div>
@@ -501,10 +453,10 @@
     <div class="swiperNormal">
         <div class="swiper-dim swiper-wrapper">
             <div class="swiper-slide">
-                <img class="imgSlider" src="./sources/imgs/room1.jpg" alt="Room 1"/>
+                <img class="imgSlider" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="Room 1"/>
             </div>
             <div class="swiper-slide">
-                <img class="imgSlider" src="./sources/imgs/room2.jpg" alt="Room 2"/>
+                <img class="imgSlider" src="{{ asset('build/images/imgs/room2.jpg') }}" alt="Room 2"/>
             </div>
         </div>
         <div class="swiper-pagination paginationStandar"></div>
@@ -513,13 +465,13 @@
     <div class="swiperNormall">
         <div class="normalaux">
             <div class="swiperNormall__imgcontent">
-                <img class="swiperNormall__imgcontent__img" src="./sources/imgs/room1.jpg" alt="Room 1"/>
+                <img class="swiperNormall__imgcontent__img" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="Room 1"/>
             </div>
             <div class="swiperNormall__imgcontent">
-                <img class="swiperNormall__imgcontent__img" src="./sources/imgs/room2.jpg" alt="Room 2"/>
+                <img class="swiperNormall__imgcontent__img" src="{{ asset('build/images/imgs/room2.jpg') }}" alt="Room 2"/>
             </div>
             <div class="swiperNormall__imgcontent">
-                <img class="swiperNormall__imgcontent__img" src="./sources/imgs/room3.jpg" alt="Room 3"/>
+                <img class="swiperNormall__imgcontent__img" src="{{ asset('build/images/imgs/room3.jpg') }}" alt="Room 3"/>
             </div>
         </div>
     </div>
@@ -528,28 +480,28 @@
     <section class="estadisticas">
         <div class="estadisticasbloq">
             <div class="estadisticas__img">
-                <img src="./sources/imgs/estadisticas/est1.svg" alt="Proyectos Completados"/>
+                <img src="{{ asset('build/images/imgs/estadisticas/est1.svg') }}" alt="Proyectos Completados"/>
             </div>
             <span class="estadisticas__tit">84k<span>+</span></span>
             <span class="estadisticas__sub">Projects are Completed</span>
         </div>
         <div class="estadisticasbloq">
             <div class="estadisticas__img">
-                <img src="./sources/imgs/estadisticas/est2.svg" alt="Active Backers"/>
+                <img src="{{ asset('build/images/imgs/estadisticas/est2.svg') }}" alt="Active Backers"/>
             </div>
             <span class="estadisticas__tit">10M<span>+</span></span>
             <span class="estadisticas__sub">Active Backers Around World</span>
         </div>
         <div class="estadisticasbloq">
             <div class="estadisticas__img">
-                <img src="./sources/imgs/estadisticas/est3.svg" alt="Categories Served"/>
+                <img src="{{ asset('build/images/imgs/estadisticas/est3.svg') }}" alt="Categories Served"/>
             </div>
             <span class="estadisticas__tit">02K<span>+</span></span>
             <span class="estadisticas__sub">Categories Served</span>
         </div>
         <div class="estadisticasbloq">
             <div class="estadisticas__img">
-                <img src="./sources/imgs/estadisticas/est4.svg" alt="Idea Raised Funds"/>
+                <img src="{{ asset('build/images/imgs/estadisticas/est4.svg') }}" alt="Idea Raised Funds"/>
             </div>
             <span class="estadisticas__tit">100M<span>+</span></span>
             <span class="estadisticas__sub">Idea Raised Funds</span>

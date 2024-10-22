@@ -18,22 +18,22 @@
 
 @font-face {
   font-family: 'Archivo-Regular';
-  src: url('../../sources/fonts/archivo/Archivo-Regular.ttf');
+  src: url('../../fonts/archivo/Archivo-Regular.ttf');
 }
 
 @font-face {
   font-family: 'OldStandardTT-Regular';
-  src: url('../../sources/fonts/old_TT/OldStandardTT-Regular.ttf');
+  src: url('../../fonts/old_TT/OldStandardTT-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url('../../sources/fonts/Roboto/Roboto-Regular.ttf');
+  src: url('../../fonts/Roboto/Roboto-Regular.ttf');
 }
 
 @font-face {
   font-family: 'oswald';
-  src: url('../../sources/fonts/Oswald/Oswald-Regular.ttf');
+  src: url('../../fonts/Oswald/Oswald-Regular.ttf');
 }
 
 html, * {

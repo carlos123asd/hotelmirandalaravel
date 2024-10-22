@@ -16,11 +16,11 @@ nav{
         height: 100%;
         align-content: center;
         &__img{
-            @include configImgMixer.imgconfig('../../sources/imgs/close.svg',15.56px,15.56px);
+            @include configImgMixer.imgconfig('../../imgs/close.svg',15.56px,15.56px);
             display: none;
         }
         &__menu{
-            @include configImgMixer.imgconfig('../../sources/imgs/menu.svg',20px,13px); 
+            @include configImgMixer.imgconfig('../../imgs/menu.svg',20px,13px); 
         }
     }
     .navtitulos{
@@ -88,10 +88,10 @@ nav{
     top: 1.5em;
     position: absolute;
         &__perfil{
-            @include configImgMixer.imgconfig('../../sources/imgs/perfil.svg',24px,24px);
+            @include configImgMixer.imgconfig('../../imgs/perfil.svg',24px,24px);
         }
         &__search{
-            @include configImgMixer.imgconfig('../../sources/imgs/search.svg',24px,24px);
+            @include configImgMixer.imgconfig('../../imgs/search.svg',24px,24px);
             margin-left: 1.5em;
         }
     }

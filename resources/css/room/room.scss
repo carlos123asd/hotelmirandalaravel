@@ -53,31 +53,31 @@
             align-items: center;
             &__img{
                 display: inline-block;
-                @include configImgMixer.imgconfig('../../sources/imgs/topbar/bed.svg',16px,16px);
+                @include configImgMixer.imgconfig('../../imgs/topbar/bed.svg',16px,16px);
             }
             &__img2{
                 display: inline-block;
-                @include configImgMixer.imgconfig('../../sources/imgs/topbar/wifi.svg',16px,16px);
+                @include configImgMixer.imgconfig('../../imgs/topbar/wifi.svg',16px,16px);
             }
             &__img3{
                 display: inline-block;
-                @include configImgMixer.imgconfig('../../sources/imgs/topbar/car.svg',16px,16px);
+                @include configImgMixer.imgconfig('../../imgs/topbar/car.svg',16px,16px);
             }
             &__img4{
                 display: inline-block;
-                @include configImgMixer.imgconfig('../../sources/imgs/topbar/acondicionado.svg',16px,16px);
+                @include configImgMixer.imgconfig('../../imgs/topbar/acondicionado.svg',16px,16px);
             }
             &__img5{
                 display: inline-block;
-                @include configImgMixer.imgconfig('../../sources/imgs/topbar/gym.svg',16px,16px);
+                @include configImgMixer.imgconfig('../../imgs/topbar/gym.svg',16px,16px);
             }
             &__img6{
                 display: inline-block;
-                @include configImgMixer.imgconfig('../../sources/imgs/topbar/tabaco.svg',16px,16px);
+                @include configImgMixer.imgconfig('../../imgs/topbar/tabaco.svg',16px,16px);
             }
             &__img7{
                 display: inline-block;
-                @include configImgMixer.imgconfig('../../sources/imgs/topbar/alcohol.svg',16px,16px);
+                @include configImgMixer.imgconfig('../../imgs/topbar/alcohol.svg',16px,16px);
             }
         }
     }

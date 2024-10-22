@@ -38,30 +38,30 @@
                     margin-right: 1em;
                     margin-left: .35em;
                     display: inline-block;
-                    @include configImgMixer.imgconfig('../../sources/imgs/topbar/bed.svg',20px,16px);}
+                    @include configImgMixer.imgconfig('../../imgs/topbar/bed.svg',20px,16px);}
                 &__img2{
                     margin-right: 1em;
                     display: inline-block;
-                    @include configImgMixer.imgconfig('../../sources/imgs/topbar/wifi.svg',16px,16px);}
+                    @include configImgMixer.imgconfig('../../imgs/topbar/wifi.svg',16px,16px);}
                 &__img3{
                     margin-right: 1em;
                     display: inline-block;
-                    @include configImgMixer.imgconfig('../../sources/imgs/topbar/car.svg',16px,16px);}
+                    @include configImgMixer.imgconfig('../../imgs/topbar/car.svg',16px,16px);}
                 &__img4{
                     margin-right: 1em;
                     display: inline-block;
-                    @include configImgMixer.imgconfig('../../sources/imgs/topbar/acondicionado.svg',30px,16px);}
+                    @include configImgMixer.imgconfig('../../imgs/topbar/acondicionado.svg',30px,16px);}
                 &__img5{
                     margin-right: 1em;
                     display: inline-block;
-                    @include configImgMixer.imgconfig('../../sources/imgs/topbar/gym.svg',20px,16px);}
+                    @include configImgMixer.imgconfig('../../imgs/topbar/gym.svg',20px,16px);}
                 &__img6{
                     margin-right: 1em;
                     display: inline-block;
-                    @include configImgMixer.imgconfig('../../sources/imgs/topbar/tabaco.svg',20px,16px);}
+                    @include configImgMixer.imgconfig('../../imgs/topbar/tabaco.svg',20px,16px);}
                 &__img7{
                     display: inline-block;
-                    @include configImgMixer.imgconfig('../../sources/imgs/topbar/alcohol.svg',20px,16px);}
+                    @include configImgMixer.imgconfig('../../imgs/topbar/alcohol.svg',20px,16px);}
             }
         }
     

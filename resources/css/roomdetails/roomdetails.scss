@@ -145,7 +145,7 @@
 .founder{
     margin-top: 5em;
     &__img{
-       @include configImgMixer.imgconfig('../../sources/imgs/profile.jpg',150px,150px);
+       @include configImgMixer.imgconfig('../../imgs/profile.jpg',150px,150px);
        margin: 0 auto;
        border-radius: 10em;
        position: relative;

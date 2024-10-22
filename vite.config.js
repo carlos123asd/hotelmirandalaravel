@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
+import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
     plugins: [
@@ -30,5 +31,21 @@ export default defineConfig({
             ],
             refresh: true, // Para habilitar la recarga automática en desarrollo
         }),
+        viteStaticCopy({
+            targets: [
+                {
+                    src: 'resources/imgs',
+                    dest: 'images'
+                },
+                {
+                    src: 'resources/video',
+                    dest: 'video'
+                },
+                {
+                    src: 'resources/fonts',
+                    dest: 'fonts'
+                }
+            ]
+        })
     ],
 });

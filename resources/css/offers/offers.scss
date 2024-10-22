@@ -2,7 +2,7 @@
 @use '../mixin/configImgMixer.scss';
 .offers{
     &__img{
-        @include configImgMixer.imgconfig('../../sources/imgs/luxurydoublebed.jpg',100%,162px);
+        @include configImgMixer.imgconfig('../../imgs/luxurydoublebed.jpg',100%,162px);
         position: relative;
         margin-bottom: 1em;
         &__precio1{

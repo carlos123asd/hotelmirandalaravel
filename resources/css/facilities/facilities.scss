@@ -58,37 +58,37 @@
             }
         }
         &__img{
-            @include configImgMixer.imgconfig('../../sources/imgs/facilidades/estrellas.svg',70px,70px);
+            @include configImgMixer.imgconfig('../../imgs/facilidades/estrellas.svg',70px,70px);
             margin-bottom: 2em;
             position: absolute;
             top: 7em;
         }
         &__img2{
-            @include configImgMixer.imgconfig('../../sources/imgs/facilidades/time.svg',70px,70px);
+            @include configImgMixer.imgconfig('../../imgs/facilidades/time.svg',70px,70px);
             margin-bottom: 2em;
             position: absolute;
             top: 7em;
         }
         &__img3{
-            @include configImgMixer.imgconfig('../../sources/imgs/facilidades/location.svg',70px,70px);
+            @include configImgMixer.imgconfig('../../imgs/facilidades/location.svg',70px,70px);
             margin-bottom: 2em;
             position: absolute;
             top: 7em;
         }
         &__img4{
-            @include configImgMixer.imgconfig('../../sources/imgs/facilidades/cancelation.svg',70px,70px);
+            @include configImgMixer.imgconfig('../../imgs/facilidades/cancelation.svg',70px,70px);
             margin-bottom: 2em;
             position: absolute;
             top: 7em;
         }
         &__img5{
-            @include configImgMixer.imgconfig('../../sources/imgs/facilidades/payment.svg',70px,70px);
+            @include configImgMixer.imgconfig('../../imgs/facilidades/payment.svg',70px,70px);
             margin-bottom: 2em;
             position: absolute;
             top: 7em;
         }
         &__img6{
-            @include configImgMixer.imgconfig('../../sources/imgs/facilidades/offers.svg',70px,70px);
+            @include configImgMixer.imgconfig('../../imgs/facilidades/offers.svg',70px,70px);
             margin-bottom: 2em;
             position: absolute;
             top: 7em;
