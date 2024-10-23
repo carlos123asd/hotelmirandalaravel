@@ -33,13 +33,16 @@ class DatabaseSeeder extends Seeder
         Message::factory(10)->create();
     
         DB::table('amenities')->insert([
-            ['name' => 'AC'],
-            ['name' => 'Shower'],
-            ['name' => 'Towel'],
-            ['name' => 'Bathup'],
-            ['name' => 'Coffee Set'],
-            ['name' => 'LED TV'],
-            ['name' => 'WI-FI'],
+                ['name' => 'Air conditioner', 'icon' => 'build/images/imgs/listaroomdetails/lista1.svg'], 
+                ['name' => 'Breakfast', 'icon' => 'build/images/imgs/listaroomdetails/lista2.svg'], 
+                ['name' => 'Cleaning', 'icon' => 'build/images/imgs/listaroomdetails/lista3.svg'], 
+                ['name' => 'Grocery', 'icon' => 'build/images/imgs/listaroomdetails/lista4.svg'], 
+                ['name' => 'Shop near', 'icon' => 'build/images/imgs/listaroomdetails/lista5.svg'], 
+                ['name' => 'High speed WiFi', 'icon' => 'build/images/imgs/listaroomdetails/lista8.svg'], 
+                ['name' => 'Kitchen', 'icon' => 'build/images/imgs/listaroomdetails/lista9.svg'],
+                ['name' => 'Shower', 'icon' => 'build/images/imgs/listaroomdetails/lista10.svg'],
+                ['name' => 'Single bed', 'icon' => 'build/images/imgs/listaroomdetails/lista11.svg'],
+                ['name' => 'Towels', 'icon' => 'build/images/imgs/listaroomdetails/lista12.svg']
         ]);
 
         $rooms = Room::all();

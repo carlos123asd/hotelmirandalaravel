@@ -9,7 +9,8 @@ class Rooms extends Controller
 {
     public function indexoffers()
     {
-        return view('app.offers');
+        $rooms = Room::with(['photos','amenities'])->where('offer',1)->get();
+        return view('app.offers',compact('rooms'));
     }
     /**
      * Display a listing of the resource.

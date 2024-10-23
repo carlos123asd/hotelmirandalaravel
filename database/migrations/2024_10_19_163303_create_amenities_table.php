@@ -13,7 +13,30 @@ return new class extends Migration
     {
         Schema::create('amenities', function (Blueprint $table) {
             $table->id();
-            $table->enum('name',['AC', 'Shower', 'Towel', 'Bathup', 'Coffee Set', 'LED TV', 'WI-FI']);
+            $table->enum('icon',[
+                'build/images/imgs/listaroomdetails/lista1.svg',
+                'build/images/imgs/listaroomdetails/lista2.svg',
+                'build/images/imgs/listaroomdetails/lista3.svg',
+                'build/images/imgs/listaroomdetails/lista4.svg',
+                'build/images/imgs/listaroomdetails/lista5.svg',
+                'build/images/imgs/listaroomdetails/lista8.svg',
+                'build/images/imgs/listaroomdetails/lista9.svg',
+                'build/images/imgs/listaroomdetails/lista10.svg',
+                'build/images/imgs/listaroomdetails/lista11.svg',
+                'build/images/imgs/listaroomdetails/lista12.svg'
+            ]);
+            $table->enum('name',[
+                'Air conditioner', 
+                'Breakfast', 
+                'Cleaning', 
+                'Grocery', 
+                'Shop near', 
+                'High speed WiFi', 
+                'Kitchen',
+                'Shower',
+                'Single bed',
+                'Towels'
+            ]);
             $table->timestamps();
         });
         Schema::create('amenity_room', function (Blueprint $table) {
