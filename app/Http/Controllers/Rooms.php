@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Room;
 use Illuminate\Http\Request;
 
 class Rooms extends Controller
@@ -15,7 +16,8 @@ class Rooms extends Controller
      */
     public function index()
     {
-        return view('app.room');
+        $rooms = Room::with(['photos','amenities'])->get();
+        return view('app.room',compact('rooms'));
     }
 
     /**

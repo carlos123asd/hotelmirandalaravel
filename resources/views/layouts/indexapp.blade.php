@@ -61,12 +61,16 @@
             </div>                  
             <!--iconos-->
             <div class="naviconos">
-                <div class="aux">
-                    <div class="naviconos__perfil"></div>
-                </div>
-                <div class="aux2">
-                    <div class="naviconos__search"></div>
-                </div>
+                <a href="{{Auth::check() ? route('dashboard') : route('register')}}">
+                    <div class="aux">
+                        <div class="naviconos__perfil"></div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="aux2">
+                        <div class="naviconos__search"></div>
+                    </div>
+                </a>
             </div>
         </div>
     </nav>

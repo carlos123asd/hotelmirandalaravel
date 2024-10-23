@@ -19,246 +19,28 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
+        @foreach($rooms as $room)
           <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
-                <div class="contentAuxRoom">
-                    <div class="slider__content__topbar">
-                        <div class="slider__content__topbar__img"></div>
-                        <div class="slider__content__topbar__img2"></div>
-                        <div class="slider__content__topbar__img3"></div>
-                        <div class="slider__content__topbar__img4"></div>
-                        <div class="slider__content__topbar__img5"></div>
-                        <div class="slider__content__topbar__img6"></div>
-                        <div class="slider__content__topbar__img7"></div>
-                    </div>
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
-                    </div>
+            <img class="room__imgRoom room__imgRoom--dim" src="{{ $room->photos[0]->uri }}" alt="">
+            <div class="contentAuxRoom">
+                <div class="slider__content__topbar">
+                    <div class="slider__content__topbar__img"></div>
+                    <div class="slider__content__topbar__img2"></div>
+                    <div class="slider__content__topbar__img3"></div>
+                    <div class="slider__content__topbar__img4"></div>
+                    <div class="slider__content__topbar__img5"></div>
+                    <div class="slider__content__topbar__img6"></div>
+                    <div class="slider__content__topbar__img7"></div>
                 </div>
-          </div>
-          <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
-                <div class="contentAuxRoom">
-                    <div class="slider__content__topbar">
-                        <div class="slider__content__topbar__img"></div>
-                        <div class="slider__content__topbar__img2"></div>
-                        <div class="slider__content__topbar__img3"></div>
-                        <div class="slider__content__topbar__img4"></div>
-                        <div class="slider__content__topbar__img5"></div>
-                        <div class="slider__content__topbar__img6"></div>
-                        <div class="slider__content__topbar__img7"></div>
-                    </div>
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
-                    </div>
+                <h2 class="room__tit">{{ $room->type_room.' #'.$room->room_number }}</h2>
+                <p class="room__p">{{ $room->description }}</p>
+                <div class="room__content">
+                    <span class="room__content__precio">${{$room->price}}/Night</span>
+                    <span class="room__content__state">Booking Now</span>
                 </div>
+            </div>
           </div>
-          <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
-                <div class="contentAuxRoom">
-                    <div class="slider__content__topbar">
-                        <div class="slider__content__topbar__img"></div>
-                        <div class="slider__content__topbar__img2"></div>
-                        <div class="slider__content__topbar__img3"></div>
-                        <div class="slider__content__topbar__img4"></div>
-                        <div class="slider__content__topbar__img5"></div>
-                        <div class="slider__content__topbar__img6"></div>
-                        <div class="slider__content__topbar__img7"></div>
-                    </div>
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
-                    </div>
-                </div>
-          </div>
-          <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
-                <div class="contentAuxRoom">
-                    <div class="slider__content__topbar">
-                        <div class="slider__content__topbar__img"></div>
-                        <div class="slider__content__topbar__img2"></div>
-                        <div class="slider__content__topbar__img3"></div>
-                        <div class="slider__content__topbar__img4"></div>
-                        <div class="slider__content__topbar__img5"></div>
-                        <div class="slider__content__topbar__img6"></div>
-                        <div class="slider__content__topbar__img7"></div>
-                    </div>
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
-                    </div>
-                </div>
-          </div>
-          <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
-                <div class="contentAuxRoom">
-                    <div class="slider__content__topbar">
-                        <div class="slider__content__topbar__img"></div>
-                        <div class="slider__content__topbar__img2"></div>
-                        <div class="slider__content__topbar__img3"></div>
-                        <div class="slider__content__topbar__img4"></div>
-                        <div class="slider__content__topbar__img5"></div>
-                        <div class="slider__content__topbar__img6"></div>
-                        <div class="slider__content__topbar__img7"></div>
-                    </div>
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
-                    </div>
-                </div>
-          </div>
-          <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
-                <div class="contentAuxRoom">
-                    <div class="slider__content__topbar">
-                        <div class="slider__content__topbar__img"></div>
-                        <div class="slider__content__topbar__img2"></div>
-                        <div class="slider__content__topbar__img3"></div>
-                        <div class="slider__content__topbar__img4"></div>
-                        <div class="slider__content__topbar__img5"></div>
-                        <div class="slider__content__topbar__img6"></div>
-                        <div class="slider__content__topbar__img7"></div>
-                    </div>
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
-                    </div>
-                </div>
-          </div>
-          <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
-                <div class="contentAuxRoom">
-                    <div class="slider__content__topbar">
-                        <div class="slider__content__topbar__img"></div>
-                        <div class="slider__content__topbar__img2"></div>
-                        <div class="slider__content__topbar__img3"></div>
-                        <div class="slider__content__topbar__img4"></div>
-                        <div class="slider__content__topbar__img5"></div>
-                        <div class="slider__content__topbar__img6"></div>
-                        <div class="slider__content__topbar__img7"></div>
-                    </div>
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
-                    </div>
-                </div>
-          </div>
-          <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
-                <div class="contentAuxRoom">
-                    <div class="slider__content__topbar">
-                        <div class="slider__content__topbar__img"></div>
-                        <div class="slider__content__topbar__img2"></div>
-                        <div class="slider__content__topbar__img3"></div>
-                        <div class="slider__content__topbar__img4"></div>
-                        <div class="slider__content__topbar__img5"></div>
-                        <div class="slider__content__topbar__img6"></div>
-                        <div class="slider__content__topbar__img7"></div>
-                    </div>
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
-                    </div>
-                </div>
-          </div>
-          <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
-                <div class="contentAuxRoom">
-                    <div class="slider__content__topbar">
-                        <div class="slider__content__topbar__img"></div>
-                        <div class="slider__content__topbar__img2"></div>
-                        <div class="slider__content__topbar__img3"></div>
-                        <div class="slider__content__topbar__img4"></div>
-                        <div class="slider__content__topbar__img5"></div>
-                        <div class="slider__content__topbar__img6"></div>
-                        <div class="slider__content__topbar__img7"></div>
-                    </div>
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
-                    </div>
-                </div>
-          </div>
-          <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
-                <div class="contentAuxRoom">
-                    <div class="slider__content__topbar">
-                        <div class="slider__content__topbar__img"></div>
-                        <div class="slider__content__topbar__img2"></div>
-                        <div class="slider__content__topbar__img3"></div>
-                        <div class="slider__content__topbar__img4"></div>
-                        <div class="slider__content__topbar__img5"></div>
-                        <div class="slider__content__topbar__img6"></div>
-                        <div class="slider__content__topbar__img7"></div>
-                    </div>
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
-                    </div>
-                </div>
-          </div>
-          <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
-                <div class="contentAuxRoom">
-                    <div class="slider__content__topbar">
-                        <div class="slider__content__topbar__img"></div>
-                        <div class="slider__content__topbar__img2"></div>
-                        <div class="slider__content__topbar__img3"></div>
-                        <div class="slider__content__topbar__img4"></div>
-                        <div class="slider__content__topbar__img5"></div>
-                        <div class="slider__content__topbar__img6"></div>
-                        <div class="slider__content__topbar__img7"></div>
-                    </div>
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
-                    </div>
-                </div>
-          </div>
-          <div class="swiper-slide room swiperrooms--dim">
-            <img class="room__imgRoom room__imgRoom--dim" src="{{ asset('build/images/imgs/room1.jpg') }}" alt="">
-                <div class="contentAuxRoom">
-                    <div class="slider__content__topbar">
-                        <div class="slider__content__topbar__img"></div>
-                        <div class="slider__content__topbar__img2"></div>
-                        <div class="slider__content__topbar__img3"></div>
-                        <div class="slider__content__topbar__img4"></div>
-                        <div class="slider__content__topbar__img5"></div>
-                        <div class="slider__content__topbar__img6"></div>
-                        <div class="slider__content__topbar__img7"></div>
-                    </div>
-                    <h2 class="room__tit">Minimal Duplex Room</h2>
-                    <p class="room__p">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
-                    <div class="room__content">
-                        <span class="room__content__precio">$345/Night</span>
-                        <span class="room__content__state">Booking Now</span>
-                    </div>
-                </div>
-          </div>
+        @endforeach
         </div>
         <div class="sliderRooms__contentPagination">
             <div class="swiper-button-prev swiper-but-room"></div>

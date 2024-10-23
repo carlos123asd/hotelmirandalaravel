@@ -19,7 +19,18 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('app.contact');
 })->name('contact');
-
+//Register
+Route::get('/register', function () {
+    return view('auth.register');
+})->name('register');
+//Login
+Route::get('/login', function () {
+    return view('auth.login');
+})->name('login');
+//Dashboard
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
 
 //Rutas Activities
 Route::get('activities', [Activities::class,'index'])->name('activities.index');
