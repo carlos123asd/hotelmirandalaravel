@@ -30,6 +30,7 @@
                 background-color: #222222;
                 align-content: end;
                 &__span{
+                    cursor: pointer;
                     position: absolute;
                     @include configImgMixer.imgconfig('../../imgs/calendarform.svg',100%,100%)
                 }
@@ -50,6 +51,7 @@
                 outline: none;
                 padding-left: 2em;
                 padding-bottom: 1em;
+                color: #fff;
             }
         }
     }
@@ -66,5 +68,6 @@
         text-align: center;
         border: 0px;
         margin-top: 3em;
+        cursor: pointer;
     }
 }

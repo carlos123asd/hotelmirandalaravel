@@ -28,6 +28,7 @@
         'resources/css/offers/offers.scss',
         'resources/css/contact/contact.scss',
     ])
+    @vite('resources/js/app.js')
 </head>
 <body>
 <div class="topbarescritorio"></div>
@@ -210,6 +211,5 @@
             <span class="footer__copy__sub">Terms of use    |    Privacy Environmental Policy</span>
         </div>
     </footer>
-    @vite('resources/js/app.js')
 </body>
 </html>

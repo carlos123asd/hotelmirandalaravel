@@ -38,6 +38,7 @@ Route::resource('activities',Activities::class)->except(['index'])->middleware('
 //Rutas Rooms
 Route::get('rooms', [Rooms::class, 'index'])->name('rooms.index');
 Route::get('rooms/offers', [Rooms::class, 'indexoffers'])->name('rooms.offers');
+Route::get('rooms/availability', [Rooms::class, 'availabilityrooms'])->name('rooms.availability');
 Route::resource('rooms',Rooms::class)->except(['index'])->middleware('auth');
 //Rutas Bookings
 Route::get('bookings', [Bookings::class, 'index'])->name('bookings.index');

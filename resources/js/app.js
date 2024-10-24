@@ -5,3 +5,4 @@ import './sliderPaginationStandar';
 import './sliderMenuInit';
 import './sliderinit';
 import './video';
+import './inputVailability'

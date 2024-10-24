@@ -13,25 +13,25 @@
     </header>
     <!--Form disponibilidad-->
     <section>
-        <form class="formavailability">
+        <form class="formavailability" action="{{ route('rooms.availability') }}" method="GET">
             <div class='formavailability__content'>
                 <label for="datestart" class="formavailability__content__tag">Arrival Date</label>
-                <div class="formavailability__content__calendar">
+                <div class="formavailability__content__calendar" id="inputOpenDataIn">
                     <div class="formavailability__content__calendar__content">
                         <span class="formavailability__content__calendar__content__span"></span>
                         <input id="datestart" class="formavailability__content__calendar__content__input" type="date">
                     </div>
-                    <input class="formavailability__content__calendar__inputtxt" placeholder="24th march 2020" type="text">
+                    <input class="formavailability__content__calendar__inputtxt" id="inputDataIn" name="inputDataIn" placeholder="24th march 2020" type="text">
                 </div>
             </div>
             <div class='formavailability__content formavailability--margin'>
                 <label for="dateend" class="formavailability__content__tag">LeDeparture Date</label>
-                <div class="formavailability__content__calendar">
+                <div class="formavailability__content__calendar" id="inputOpenDataOut">
                     <div class="formavailability__content__calendar__content">
                         <span class="formavailability__content__calendar__content__span"></span>
                         <input id="dateend" class="formavailability__content__calendar__content__input" type="date">
                     </div>
-                    <input class="formavailability__content__calendar__inputtxt" placeholder="30th march 2020" type="text">
+                    <input class="formavailability__content__calendar__inputtxt" id="inputDataOut" name="inputDataOut" placeholder="30th march 2020" type="text" readonly>
                 </div>
             </div>
             <button class="formavailability__send" type="submit">CHECK AVAILABILITY</button>
