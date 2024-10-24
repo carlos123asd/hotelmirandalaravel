@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Message;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class Messages extends Controller
 {
@@ -30,7 +31,8 @@ class Messages extends Controller
     {
         $this->validateMessage($request);
         Message::create($request->all());
-        session()->flash('response','Your message has been sent successfully!');
+        Session::flash('message', 'Your message has been sent successfully!'); 
+        Session::flash('alert-class', 'alert-danger');
         return redirect()->back();
     }
 

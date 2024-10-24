@@ -50,7 +50,7 @@
     </section>
 
     <!--Form-->
-    <form class="form" id="messageForm" action="/messages" method="POST">
+    <form class="form" action="{{ route('messages.store') }}" method="POST">
         @csrf
         <div class="formImgAux">
             <img class="form__headerimg" src="{{ asset('build/images/imgs/form/contact.jpg') }}" alt="Contact Us">
@@ -81,40 +81,15 @@
     </form>
 @endsection
 
-@if(session('response'))
-    <script>
-        $(document).ready(function() {
-            $('#messageForm').on('submit', function(e) {
-                e.preventDefault(); // Evitar el envío normal del formulario
-
-                $.ajax({
-                    url: "{{ route('contact') }}", // Cambia esto a tu ruta de almacenamiento
-                    type: "POST",
-                    data: $(this).serialize(),
-                    success: function(response) {
-                        // Muestra el mensaje con Toastify
-                        Toastify({
-                            text: "Your message has been sent successfully!",
-                            duration: 3000,
-                            close: true,
-                            gravity: "top",
-                            position: "center",
-                            backgroundColor: "#135846",
-                        }).showToast();
-                    },
-                    error: function(xhr) {
-                        // Manejo de errores
-                        Toastify({
-                            text: "An error occurred. Please try again.",
-                            duration: 3000,
-                            close: true,
-                            gravity: "top",
-                            position: "center",
-                            backgroundColor: "#d9534f",
-                        }).showToast();
-                    }
-                });
-            });
-        });
-    </script>
+@if(Session::has('message'))
+        <script>
+            Toastify({
+                text: "{{ Session::get('message') }}",
+                duration: 10000,
+                close: true,
+                gravity: "top",
+                position: "center",
+                backgroundColor: "#135846",
+            }).showToast();
+        </script>
 @endif
