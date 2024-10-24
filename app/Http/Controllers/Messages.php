@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Message;
 use Illuminate\Http\Request;
 
 class Messages extends Controller
@@ -27,7 +28,10 @@ class Messages extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validateMessage($request);
+        Message::create($request->all());
+        session()->flash('response','Your message has been sent successfully!');
+        return redirect()->back();
     }
 
     /**
@@ -60,5 +64,15 @@ class Messages extends Controller
     public function destroy(string $id)
     {
         //
+    }
+
+    private function validateMessage(Request $request){
+        $request->validate([
+            'customer' => 'required|string',
+            'phone' => 'nullable|string',
+            'email' => 'required|string',
+            'reason' => 'required|string',
+            'comment' => 'required|string'
+        ]);
     }
 }

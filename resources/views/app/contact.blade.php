@@ -50,32 +50,71 @@
     </section>
 
     <!--Form-->
-    <section class="form">
+    <form class="form" id="messageForm" action="/messages" method="POST">
+        @csrf
         <div class="formImgAux">
             <img class="form__headerimg" src="{{ asset('build/images/imgs/form/contact.jpg') }}" alt="Contact Us">
         </div>
         <div class="form__inputs">
             <div class="form__inputs__contentname">
-                <img class="form__inputs__contentname__img" src="{{ asset('build/images/imgs/form/name.svg') }}" alt="Your Name">
-                <input class="form__inputs__contentname__input" type="text" placeholder="Your full name">
+                <img class="form__inputs__contentname__img" src="{{ asset('build/images/imgs/form/name.svg') }}" alt="Name">
+                <input class="form__inputs__contentname__input" name="customer" type="text" placeholder="Your full name">
             </div>
             <div class="form__inputs__contentname">
-                <img class="form__inputs__contentname__img" src="{{ asset('build/images/imgs/form/form2.svg') }}" alt="Your Name">
-                <input class="form__inputs__contentname__input" type="text" placeholder="Add phone number">
+                <img class="form__inputs__contentname__img" src="{{ asset('build/images/imgs/form/form2.svg') }}" alt="Number">
+                <input class="form__inputs__contentname__input" name="phone" type="text" placeholder="Add phone number">
             </div>
             <div class="form__inputs__contentname">
-                <img class="form__inputs__contentname__img" src="{{ asset('build/images/imgs/form/form3.svg') }}" alt="Your Name">
-                <input class="form__inputs__contentname__input" type="text" placeholder="Enter email address">
+                <img class="form__inputs__contentname__img" src="{{ asset('build/images/imgs/form/form3.svg') }}" alt="Email">
+                <input class="form__inputs__contentname__input" name="email" type="text" placeholder="Enter email address">
             </div>
             <div class="form__inputs__contentname">
-                <img class="form__inputs__contentname__img" src="{{ asset('build/images/imgs/form/form4.svg') }}" alt="Your Name">
-                <input class="form__inputs__contentname__input" type="text" placeholder="Enter subject">
+                <img class="form__inputs__contentname__img" src="{{ asset('build/images/imgs/form/form4.svg') }}" alt="Reason">
+                <input class="form__inputs__contentname__input" name="reason" type="text" placeholder="Enter reason">
             </div>
             <div class="form__inputs__contentname">
-                <img class="form__inputs__contentname__img form__inputs__contentname__img--red" src="{{ asset('build/images/imgs/form/form5.svg') }}" alt="Your Name">
-                <textarea class="form__inputs__contentname__inputarea" placeholder="Enter message"></textarea>
+                <img class="form__inputs__contentname__img form__inputs__contentname__img--red" src="{{ asset('build/images/imgs/form/form5.svg') }}" alt="Message">
+                <textarea class="form__inputs__contentname__inputarea" name="comment" placeholder="Enter message"></textarea>
             </div>
         </div>
-        <div class="form__btn">SEND</div>
-    </section>
+        <input class="form__btn" value="SEND" type="submit">
+    </form>
 @endsection
+
+@if(session('response'))
+    <script>
+        $(document).ready(function() {
+            $('#messageForm').on('submit', function(e) {
+                e.preventDefault(); // Evitar el envío normal del formulario
+
+                $.ajax({
+                    url: "{{ route('your.route.name') }}", // Cambia esto a tu ruta de almacenamiento
+                    type: "POST",
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        // Muestra el mensaje con Toastify
+                        Toastify({
+                            text: "Your message has been sent successfully!",
+                            duration: 3000,
+                            close: true,
+                            gravity: "top",
+                            position: "center",
+                            backgroundColor: "#135846",
+                        }).showToast();
+                    },
+                    error: function(xhr) {
+                        // Manejo de errores
+                        Toastify({
+                            text: "An error occurred. Please try again.",
+                            duration: 3000,
+                            close: true,
+                            gravity: "top",
+                            position: "center",
+                            backgroundColor: "#d9534f",
+                        }).showToast();
+                    }
+                });
+            });
+        });
+    </script>
+@endif

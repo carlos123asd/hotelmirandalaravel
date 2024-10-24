@@ -5,6 +5,7 @@ use App\Http\Controllers\Bookings;
 use App\Http\Controllers\Messages;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Rooms;
+use App\Models\Message;
 use Illuminate\Support\Facades\Route;
 
 //Home
@@ -39,7 +40,7 @@ Route::resource('activities',Activities::class)->except(['index'])->middleware('
 Route::get('rooms', [Rooms::class, 'index'])->name('rooms.index');
 Route::get('rooms/offers', [Rooms::class, 'indexoffers'])->name('rooms.offers');
 Route::get('rooms/availability', [Rooms::class, 'availabilityrooms'])->name('rooms.availability');
-Route::resource('rooms',Rooms::class)->except(['index'])->middleware('auth');
+Route::resource('rooms',Rooms::class)->except(['index','indexoffers','availabilityrooms'])->middleware('auth');
 //Rutas Bookings
 Route::get('bookings', [Bookings::class, 'index'])->name('bookings.index');
 Route::resource('bookings',Bookings::class)->except(['index'])->middleware('auth');

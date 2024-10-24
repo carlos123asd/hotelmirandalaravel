@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('messages', function (Blueprint $table) {
             $table->id();
-            $table->dateTime('date');
+            $table->dateTime('date')->useCurrent();
             $table->string('customer');
             $table->string('email');
-            $table->string('phone');
+            $table->string('phone')->nullable(true);
             $table->string('reason');
             $table->text('comment');
-            $table->enum('status',['archived', 'published', 'none']);
+            $table->enum('status',['archived', 'published', 'none'])->default('none');
             $table->timestamps();
         });
     }
