@@ -88,7 +88,7 @@
                 e.preventDefault(); // Evitar el envío normal del formulario
 
                 $.ajax({
-                    url: "{{ route('your.route.name') }}", // Cambia esto a tu ruta de almacenamiento
+                    url: "{{ route('contact') }}", // Cambia esto a tu ruta de almacenamiento
                     type: "POST",
                     data: $(this).serialize(),
                     success: function(response) {
