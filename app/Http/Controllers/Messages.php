@@ -29,6 +29,7 @@ class Messages extends Controller
      */
     public function store(Request $request)
     {
+        //No se muestra el toasty, hace el redirect y no se ve
         $this->validateMessage($request);
         Message::create($request->all());
         Session::flash('message', 'Your message has been sent successfully!'); 

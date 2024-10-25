@@ -80,16 +80,3 @@
         <input class="form__btn" value="SEND" type="submit">
     </form>
 @endsection
-
-@if(Session::has('message'))
-        <script>
-            Toastify({
-                text: "{{ Session::get('message') }}",
-                duration: 10000,
-                close: true,
-                gravity: "top",
-                position: "center",
-                backgroundColor: "#135846",
-            }).showToast();
-        </script>
-@endif

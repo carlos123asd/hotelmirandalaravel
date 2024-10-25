@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/toastify-js" defer></script>
     @vite([
         'resources/css/app.css',
         'resources/css/index/index.css',
@@ -213,5 +212,18 @@
             <span class="footer__copy__sub">Terms of use    |    Privacy Environmental Policy</span>
         </div>
     </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    @if(Session::has('message'))
+        <script>
+            Toastify({
+                text: "{{ Session::get('message') }}",
+                duration: 10000,
+                close: true,
+                gravity: "top",
+                position: "center",
+                backgroundColor: "#135846",
+            }).showToast();
+        </script>
+    @endif
 </body>
 </html>
