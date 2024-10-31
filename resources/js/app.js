@@ -1,4 +1,5 @@
 import './bootstrap';
+import './sliderDetails';
 import './sliderRoomList';
 import './sliderRooms';
 import './sliderFacilities';

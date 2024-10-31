@@ -4,31 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
+    @vite('resources/css/app.css')
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js" defer></script>
-    @vite([
-        'resources/css/app.css',
-        'resources/css/index/index.css',
-        'resources/css/nav/nav.scss',
-        'resources/css/header/headerHome.scss',
-        'resources/css/form/availability.scss',
-        'resources/css/aboutUs/about.scss',
-        'resources/css/aboutUs/imgAboutUs.scss',
-        'resources/css/sliderRooms/slider.scss',
-        'resources/css/introvideo/video.scss',
-        'resources/css/facilities/facilities.scss',
-        'resources/css/menu/menu.scss',
-        'resources/css/sliderStandar/sliderStandarNavigation.scss',
-        'resources/css/estadisticas/estadisticas.scss',
-        'resources/css/footer/footer.scss',
-        'resources/css/aboutPage/about.scss',
-        'resources/css/room/room.scss',
-        'resources/css/roomdetails/roomdetails.scss',
-        'resources/css/offers/offers.scss',
-        'resources/css/contact/contact.scss',
-    ])
     @vite('resources/js/app.js')
 </head>
 <body>

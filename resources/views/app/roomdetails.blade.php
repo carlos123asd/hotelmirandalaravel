@@ -61,7 +61,7 @@
         <div class="amenities__content">
             <ul class="amenities__content__list1">
                 @foreach($room->amenities as $amenity)
-                    <li><img src="{{ $amenity->icon }}" alt=""/>{{ $amenity->name }}</li>
+                    <li><img src="{{ asset($amenity->icon) }}" alt=""/>{{ $amenity->name }}</li>
                 @endforeach
             </ul>
         </div>
@@ -94,7 +94,7 @@
                             <div class="slider__content__topbar--display">
                                 <div class="auxcontentimgstopbarDetails">
                                     @foreach($roomRelated->amenities as $amenity)
-                                    <img class="slider__content__topbar__imgs" src="{{ $amenity->icon }}" alt="{{ $amenity->name }}">
+                                    <img class="slider__content__topbar__imgs" src="{{ asset($amenity->icon) }}" alt="{{ $amenity->name }}">
                                     @endforeach
                                 </div>
                             </div>

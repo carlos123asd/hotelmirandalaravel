@@ -26,7 +26,7 @@
                     <div class="contentAuxList">
                         <div class="slider__content__topbar slider__content__topbar--list">
                             @foreach($room->amenities as $amenity)
-                            <img class="slider__content__topbar__img" src="{{ $amenity->icon }}" alt="{{ $amenity->name }}" />
+                            <img class="slider__content__topbar__img" src="{{ asset($amenity->icon) }}" alt="{{ $amenity->name }}" />
                             @endforeach
                         </div>
                         <h2 class="room__tit room__titlist">{{ $room->type_room.' #'.$room->room_number }}</h2>
