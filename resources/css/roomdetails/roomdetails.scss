@@ -145,7 +145,7 @@
 .founder{
     margin-top: 5em;
     &__img{
-       @include configImgMixer.imgconfig('../../imgs/profile.jpg',150px,150px);
+       @include configImgMixer.imgconfig('../../sources/imgs/profile.jpg',150px,150px);
        margin: 0 auto;
        border-radius: 10em;
        position: relative;
@@ -224,10 +224,145 @@
 .slider{
     &__content{
         &__topbar{
-            &--pos{
-                top: 12.5em;
-                right: 9%;
+            &--display{
+                position: absolute;
+                background-color: #fff;
+                width: max-content;
+                height: 40px;
+                bottom: -5%;
+                right: 16.5%;
+                align-content: center;
+                padding: 0 1rem;
             }
+            &__imgs{
+                width: 100% !important;
+            }
+        }
+    }
+}
+.contentAuxDetails{
+    position: relative;
+}
+.contentAuxDetailsRoomTxt{
+    margin-top: 2.5rem;
+}
+.room{
+    &__imgRoom{
+        &--list{
+            width: 100%;
+            height: 218px;
+        }
+    }
+}
+.auxcontentimgstopbarDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media only screen and (min-width: 1250px){
+    .doublebed{
+        position: relative;
+        padding-left: 20%;
+        margin-top: 4em;
+        &__content{
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0;
+            & div:nth-child(1){
+                width: 100%;
+            }
+            &__sub{
+                font-size: 0.88rem;
+            }
+            &__tit{
+                font-size: 3rem
+            }
+            &__precio{
+                font-size: 2.50rem;
+                & span{
+                    font-size: 1rem;
+                }
+            }
+            &__img{
+                width: 100%;
+                height: 490px;
+            }
+        }
+        &__p{
+            font-size: 1rem;
+            line-height: 24px;
+            width: 100%;
+        }
+    }
+    .contentAuxDetailsAvailability{
+        width: 20%;
+        position: absolute;
+        right: 20%;
+        top: 13%;
+    }
+    .contentRoomInfoDetails{
+        padding-right: 2em;
+        display: flex;
+        align-items: flex-end;
+        width: 35% !important;
+        position: absolute;
+        top: -1.5rem;
+        background-color: #fff;
+    }
+    .amenities{
+        padding-left: 20%;
+        &__content{
+            &__list1{
+                margin-right: 5rem;
+            }
+        }
+    }
+    .founder{
+        width: 20%;
+        padding: 4em 2em;
+        margin-left: 20%;
+        box-shadow: 0px 14px 24px 0px #BEAD8E45;
+    }
+    .cancelation{
+        width: 40%;
+        margin-left: 20%;
+    }
+    .relatedrooms{
+        margin-left: 20%;
+    }
+    .sliderroomdetails{
+        width: 100%;
+        //overflow: hidden;
+    }
+    .auxcontentimgstopbarDetails{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .detailslide{
+        width: 26.5% !important;
+    }
+    .slider{
+        &__content{
+            &__topbar{
+                &--display{
+                    right: 20%;
+                }
+            }
+        }
+    }
+    .auxflexprices{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        & span:nth-child(2){
+            margin: 0;
         }
     }
 }

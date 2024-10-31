@@ -261,7 +261,134 @@
   top: 7em !important;
 }
 
-.slider__content__topbar--pos {
-  top: 12.5em;
-  right: 9%;
+.slider__content__topbar--display {
+  position: absolute;
+  background-color: #fff;
+  width: -moz-max-content;
+  width: max-content;
+  height: 40px;
+  bottom: -5%;
+  right: 16.5%;
+  align-content: center;
+  padding: 0 1rem;
+}
+.slider__content__topbar__imgs {
+  width: 100% !important;
+}
+
+.contentAuxDetails {
+  position: relative;
+}
+
+.contentAuxDetailsRoomTxt {
+  margin-top: 2.5rem;
+}
+
+.room__imgRoom--list {
+  width: 100%;
+  height: 218px;
+}
+
+.auxcontentimgstopbarDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media only screen and (min-width: 1250px) {
+  .doublebed {
+    position: relative;
+    padding-left: 20%;
+    margin-top: 4em;
+  }
+  .doublebed__content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  .doublebed__content div:nth-child(1) {
+    width: 100%;
+  }
+  .doublebed__content__sub {
+    font-size: 0.88rem;
+  }
+  .doublebed__content__tit {
+    font-size: 3rem;
+  }
+  .doublebed__content__precio {
+    font-size: 2.5rem;
+  }
+  .doublebed__content__precio span {
+    font-size: 1rem;
+  }
+  .doublebed__content__img {
+    width: 100%;
+    height: 490px;
+  }
+  .doublebed__p {
+    font-size: 1rem;
+    line-height: 24px;
+    width: 100%;
+  }
+  .contentAuxDetailsAvailability {
+    width: 20%;
+    position: absolute;
+    right: 20%;
+    top: 13%;
+  }
+  .contentRoomInfoDetails {
+    padding-right: 2em;
+    display: flex;
+    align-items: flex-end;
+    width: 35% !important;
+    position: absolute;
+    top: -1.5rem;
+    background-color: #fff;
+  }
+  .amenities {
+    padding-left: 20%;
+  }
+  .amenities__content__list1 {
+    margin-right: 5rem;
+  }
+  .founder {
+    width: 20%;
+    padding: 4em 2em;
+    margin-left: 20%;
+    box-shadow: 0px 14px 24px 0px rgba(190, 173, 142, 0.2705882353);
+  }
+  .cancelation {
+    width: 40%;
+    margin-left: 20%;
+  }
+  .relatedrooms {
+    margin-left: 20%;
+  }
+  .sliderroomdetails {
+    width: 100%;
+  }
+  .auxcontentimgstopbarDetails {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .detailslide {
+    width: 26.5% !important;
+  }
+  .slider__content__topbar--display {
+    right: 20%;
+  }
+  .auxflexprices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .auxflexprices span:nth-child(2) {
+    margin: 0;
+  }
 }/*# sourceMappingURL=roomdetails.css.map */

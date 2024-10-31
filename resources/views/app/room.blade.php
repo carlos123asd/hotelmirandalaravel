@@ -1,6 +1,6 @@
 @extends('layouts.indexapp')
 
-@section('title', 'Room')
+@section('title', 'Rooms')
 
 @section('content')
     <!--header about-->

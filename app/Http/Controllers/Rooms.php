@@ -26,7 +26,7 @@ class Rooms extends Controller
             });
         })->get();
 
-        return view('app.room',compact('rooms'));
+        return view('app.roomlist',compact('rooms'));
     }
 
     /**
@@ -59,7 +59,9 @@ class Rooms extends Controller
      */
     public function show(string $id)
     {
-        //
+        $room = Room::with(['photos','amenities'])->where('id',$id)->first();
+        $roomsRelated = Room::with(['photos','amenities'])->where('type_room',$room->type_room)->get();
+        return view('app.roomdetails',compact('room','roomsRelated'));
     }
 
     /**
