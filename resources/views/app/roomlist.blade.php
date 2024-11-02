@@ -34,7 +34,7 @@
                     </div>
                     <div class="room__content">
                         <span class="room__content__precio room__content__precio--list">${{$room->price}}<span>/Night</span></span>
-                        <a href="{{ route('rooms.details', ['id' => $room->id]) }}" style="text-decoration: none;color:#bdbdbd" ><span class="room__content__state">Booking Now</span></a> <!--CAMBIAR A BOOK NOW AL HACER MOUSE OVER-->
+                        <a href="{{ route('rooms.details', ['id' => $room->id]) }}" style="text-decoration: none;color:#bdbdbd" ><span id="btnbooking" class="room__content__state room__content__btnroomlist">Book Now</span></a>
                     </div>
                 </div>
             </div>

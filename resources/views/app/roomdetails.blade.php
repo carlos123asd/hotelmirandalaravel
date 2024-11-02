@@ -26,31 +26,32 @@
                 </div>
                 <img class="doublebed__content__img" src="{{ $room->photos[0]->uri }}" alt="Photo Room">
             </div>
-            <div class="contentAuxDetailsAvailability">
+            <form class="contentAuxDetailsAvailability" action="/bookings" method="POST">
+                @csrf
+                <input type="hidden" name="room_id" value="{{ $room->id }}">
                 <h4 class="doublebed__content__avaible">Check Availability</h4>
                 <h5 class="doublebed__content__labelin">Check In</h5>
-                <div class="doublebed__content__contentin">
-                    <div class="doublebed__content__contentin__text">
-                        <input type="text" placeholder="Fri, 14th June 2020">
+                <div class="doublebed__content__contentin doublebed__content__contentindetails">
+                    <div class="formavailability__content__calendar__content detailmod">
+                        <div>
+                            <span class="formavailability__content__calendar__content__span"></span>
+                            <input id="datestartdetails" class="formavailability__content__calendar__content__input inputdate" type="date">
+                        </div>
                     </div>
-                    <div class="doublebed__content__contentin__calendar">
-                        <input type="date">
-                        <img src="../../../resources/imgs/calendaravaible.svg" alt="">
-                    </div>
+                    <input class="formavailability__content__calendar__inputtxt detailsinputdate" id="inputDataIndetails" name="checkin" value="{{ $in }}" placeholder="{{ $in }}" type="text">
                 </div>
-                <div></div>
                 <h5 class="doublebed__content__labelout">Check Out</h5>
-                <div class="doublebed__content__contentin">
-                    <div class="doublebed__content__contentin__text">
-                        <input type="text" placeholder="Sun, 16th June 2020">
+                <div class="doublebed__content__contentin doublebed__content__contentindetails">
+                    <div class="formavailability__content__calendar__content detailmod">
+                        <div>
+                            <span class="formavailability__content__calendar__content__span"></span>
+                            <input id="dateenddetails" class="formavailability__content__calendar__content__input inputdate" type="date">
+                        </div>
                     </div>
-                    <div class="doublebed__content__contentin__calendar">
-                        <input type="date">
-                        <img src="../../../resources/imgs/calendaravaible.svg" alt="">
-                    </div>
+                    <input class="formavailability__content__calendar__inputtxt detailsinputdate" id="inputDataIndetails" name="checkout" value="{{ $out }}" placeholder="{{ $out }}" type="text">
                 </div>
-                <div class="doublebed__content__btn">Check Availability</div>
-            </div>
+                <input type="submit" class="doublebed__content__btn" value="Check Availability">
+            </form>
             <p class="doublebed__p">{{ $room->description }}</p>
         </div>
     </section>

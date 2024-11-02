@@ -149,12 +149,16 @@
     }
 }
 @media only screen and (min-width:1000px){
+    #roomlist.hovered{
+        border-top: 6px solid #bead8e;
+    }
     .wrapperAling{
         width: auto !important;
         margin-bottom: 3rem;
     }
     .roomlist{
         display: flex !important;
+        height: auto !important;
         align-items: center;
         width: 100% !important;
         justify-content: center;
@@ -230,6 +234,10 @@
                 display: block;
                 font-size: 1rem;
                 margin-top: 3em;
+            }
+            &__btnroomlist:hover{
+                text-decoration: underline;
+                scale: 1.1;
             }
         }
     }

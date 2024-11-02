@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Room;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class Rooms extends Controller
 {
@@ -18,6 +19,9 @@ class Rooms extends Controller
         $this->validateAvailability($request);
         $datestart = $request->input('inputDataIn');
         $dateend = $request->input('inputDataOut');
+
+        Session::put('start_date',$datestart);
+        Session::put('end_date',$dateend);
 
         $rooms = Room::whereDoesntHave('bookings', function ($query) use ($datestart, $dateend) {
             $query->where(function ($query) use ($datestart, $dateend) {
@@ -57,11 +61,13 @@ class Rooms extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Request $request, string $id)
     {
         $room = Room::with(['photos','amenities'])->where('id',$id)->first();
+        $in = Session::get('start_date');
+        $out = Session::get('end_date');
         $roomsRelated = Room::with(['photos','amenities'])->where('type_room',$room->type_room)->get();
-        return view('app.roomdetails',compact('room','roomsRelated'));
+        return view('app.roomdetails',compact('room','roomsRelated','in','out'));
     }
 
     /**

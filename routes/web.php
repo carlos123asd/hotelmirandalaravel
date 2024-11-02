@@ -42,9 +42,6 @@ Route::get('rooms/offers', [Rooms::class, 'indexoffers'])->name('rooms.offers');
 Route::get('rooms/availability', [Rooms::class, 'availabilityrooms'])->name('rooms.availability');
 Route::get('rooms/details/{id}', [Rooms::class, 'show'])->name('rooms.details');
 Route::resource('rooms',Rooms::class)->except(['index','indexoffers','availabilityrooms'])->middleware('auth');
-//Rutas Bookings
-Route::get('bookings', [Bookings::class, 'index'])->name('bookings.index');
-Route::resource('bookings',Bookings::class)->except(['index'])->middleware('auth');
 //Rutas Messages
 Route::get('messages', [Messages::class, 'index'])->name('messages.index');
 Route::resource('messages',Messages::class)->except(['index'])->middleware('auth');
@@ -59,6 +56,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::resource('bookings',Bookings::class);
 });
 
 require __DIR__.'/auth.php';

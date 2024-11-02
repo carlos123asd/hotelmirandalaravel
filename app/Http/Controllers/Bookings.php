@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Booking;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 class Bookings extends Controller
 {
@@ -27,7 +30,17 @@ class Bookings extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = Auth::user();
+        $request->merge([
+            "guest" => $user->name,
+            "specialrequest" => "Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae tempora animi modi nisi, quos asperiores maxime molestiae similique, cum eum exercitationem veritatis. Facilis est alias soluta ut distinctio reprehenderit quae"
+        ]);
+        //EVALUAR DISPONIBLIDAD OTRA VEZ
+        Booking::create($request->all());
+        Session::flash('message', '¡Thank you for your request!\n Wehave received it correctly.\n
+                        Someone from our Team will get\n
+                        back to you very soon.\nThe Miranda Hotel');
+        return redirect()->route('home');
     }
 
     /**

@@ -262,6 +262,35 @@
 }
 
 @media only screen and (min-width: 1250px){
+    .detailmod{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 10% !important;
+        background-color: #F8F8F8;
+        & div:nth-child(1){
+            display: flex;
+            align-items: center;
+            height: 100%;
+            justify-content: center;
+            & span{
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+    .inputdate{
+        z-index: 1010;
+    }
+    .detailsinputdate{
+        width: 90%;
+        height: 100%;
+        position: absolute;
+        padding:0;
+        background-color: #F8F8F8;
+        color: #777777;
+    }
     .doublebed{
         position: relative;
         padding-left: 20%;
@@ -290,6 +319,11 @@
             &__img{
                 width: 100%;
                 height: 490px;
+            }
+            &__contentindetails{
+                display: flex;
+                flex-direction: row-reverse;
+                height: 55px;
             }
         }
         &__p{
