@@ -18,13 +18,15 @@
     <section class="offers">
         @foreach($rooms as $room)
             <div class="contentaux">
-                <div class="offers__img" style="background-image: url('{{ $room->photos[0]->uri }}');">
-                    <span class="offers__img__precio1 offers__img__precio1--none">${{ $room->price }}<span>/Night</span></span>
-                    <span class="offers__img__precio2 offers__img__precio2--none">${{ number_format($room->price - (($room->discount * $room->price)/100),2) }}<span>/Night</span></span>
-                </div>
+                <a href="{{ route('rooms.details', ['id' => $room->id]) }}">
+                    <div class="offers__img" style="background-image: url('{{ $room->photos[0]->uri }}');">
+                        <span class="offers__img__precio1 offers__img__precio1--none">${{ $room->price }}<span>/Night</span></span>
+                        <span class="offers__img__precio2 offers__img__precio2--none">${{ number_format($room->price - (($room->discount * $room->price)/100),2) }}<span>/Night</span></span>
+                    </div>
+                </a>
                 <div class="contentaux2">
                     <h3 class="offers__sub">{{ $room->type_room }}</h3>
-                    <h2 class="offers__tit">{{ '#'.$room->room_number.' '.$room->type_room }}</h2>
+                    <a href="{{ route('rooms.details', ['id' => $room->id]) }}"><h2 class="offers__tit">{{ '#'.$room->room_number.' '.$room->type_room }}</h2></a>
                     <div class="contentPriceAux">
                         <span class="offers__img__absolute1">${{ $room->price }}<span>/Night</span></span>
                         <span class="offers__img__absolute2">${{ number_format($room->price - (($room->discount * $room->price)/100),2) }}<span>/Night</span></span>
@@ -41,7 +43,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="offers__btn">BOOK NOW</div>
+                            <a href="{{ route('rooms.details', ['id' => $room->id]) }}"><div class="offers__btn">BOOK NOW</div></a>
                         </div>
 
                         <div class="listblock">

@@ -36,7 +36,7 @@
                 <p class="room__p">{{ $room->description }}</p>
                 <div class="room__content">
                     <span class="room__content__precio">${{$room->price}}/Night</span>
-                    <span class="room__content__state">Booking Now</span>
+                    <a href="{{ route('rooms.details', ['id' => $room->id]) }}"><span class="room__content__state">Booking Now</span></a>
                 </div>
             </div>
           </div>
