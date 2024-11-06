@@ -1,0 +1,58 @@
+name: Deploy Miranda to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy to EC2 Server
+        env:
+          SSH_HOST: ${{ secrets.SSH_HOST }}
+          SSH_USER: ${{ secrets.SSH_USER }}
+        run: |
+          # Conexión y actualización del código en el servidor EC2
+          ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST << 'EOF'
+          
+            # Cambiar a la carpeta del proyecto en el servidor
+            cd /ruta/a/la/carpeta/Miranda || exit 1
+
+            # Actualizar el repositorio
+            git pull origin main || exit 1
+
+            # Instalar dependencias de Python
+            if [ -f "requirements.txt" ]; then
+              pip install -r requirements.txt || exit 1
+            fi
+
+            # Instalar dependencias de Laravel (PHP)
+            if [ -f "composer.json" ]; then
+              composer install --no-interaction --prefer-dist --optimize-autoloader || exit 1
+            fi
+
+            # Migraciones para Django (Python)
+            if [ -f "manage.py" ]; then
+              python manage.py migrate || exit 1
+            fi
+
+            # Migraciones para Laravel (PHP)
+            if [ -f "artisan" ]; then
+              php artisan migrate --force || exit 1
+            fi
+
+            # Reiniciar Apache2 para aplicar los cambios
+            sudo systemctl restart apache2 || exit 1
+
+          EOF
