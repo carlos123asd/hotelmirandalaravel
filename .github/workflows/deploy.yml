@@ -29,28 +29,34 @@ jobs:
             # Cambiar a la carpeta del proyecto en el servidor
             cd /var/www/miranda_laravel/hotelmirandalaravel || exit 1
 
+            # Configurar el directorio como seguro en Git
+            git config --global --add safe.directory /var/www/miranda_laravel/hotelmirandalaravel
+
             # Actualizar el repositorio
             git pull origin main || exit 1
-
-            # Instalar dependencias de Python
-            if [ -f "requirements.txt" ]; then
-              pip install -r requirements.txt || exit 1
-            fi
 
             # Instalar dependencias de Laravel (PHP)
             if [ -f "composer.json" ]; then
               composer install --no-interaction --prefer-dist --optimize-autoloader || exit 1
             fi
 
-            # Migraciones para Django (Python)
-            if [ -f "manage.py" ]; then
-              python manage.py migrate || exit 1
+             # Instalar dependencias de Node.js (npm)
+            if [ -f "package.json" ]; then
+              npm install || exit 1
             fi
+
+            # Ejecutar la compilación de los assets con npm
+            npm run build || exit 1
 
             # Migraciones para Laravel (PHP)
             if [ -f "artisan" ]; then
               php artisan migrate --force || exit 1
             fi
+
+            # Limpiar vistas y cache de Laravel
+            php artisan config:cache || exit 1
+            php artisan route:cache || exit 1
+            php artisan view:clear || exit 1
 
             # Reiniciar Apache2 para aplicar los cambios
             sudo systemctl restart apache2 || exit 1
